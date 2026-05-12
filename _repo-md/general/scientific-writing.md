@@ -203,10 +203,7 @@ You are the author of your paper, not the AI. You are responsible for every clai
 
 # Further Reading
 
-These resources go deeper into scientific writing at the University of Hamburg:
-
 - [Wie schreibe ich wissenschaftlich?](https://studienperspektiven.check.uni-hamburg.de/wie-schreibe-ich-wissenschaftlich/) (University of Hamburg, StudienPerspektivTage): an introduction to the principles of academic writing, with links to writing center workshops and individual consultations.
-- [Leitfaden zur Anfertigung von Seminar-, Bachelor- und Masterarbeiten](https://www.bwl.uni-hamburg.de/stman/fotos-dateien/hinweise-wiss-arbeiten-01-26.pdf) (Prof. Dr. Nicola Berg, Strategic Management): a detailed guide covering evaluation criteria, structure, formal requirements, and citation rules at the Faculty of Business Administration.
 
 # Next Steps
 
