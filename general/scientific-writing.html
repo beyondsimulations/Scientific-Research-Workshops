@@ -1018,13 +1018,13 @@ Table&nbsp;1: Chart type selection guide
     </div>
   </div>
 </footer>
-<script src="https://agents.byndsim.com/static/floating-chat.js?v=9497b10c"></script>
+<script src="https://chat.beyondsimulations.com/widget.js"></script>
 <script>
-new UniversalChatWidget({
-  "apiEndpoint": "https://chat.byndsim.com/chat",
-  "model": "thesis-helper",
-  "configUrl": "https://agents.byndsim.com/api/widget-config/thesis-helper"
-});
+  ChatWidget.init({
+    apiUrl: "https://chat.beyondsimulations.com",
+    tenant: "platform",
+    agent: "thesis-helper",
+  });
 </script>
 
 
