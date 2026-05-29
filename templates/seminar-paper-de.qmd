@@ -74,6 +74,7 @@ format:
       text: |
         #set text(lang: "de")
         #set par(leading: 0.85em)
+        #set math.equation(numbering: "(1)", number-align: end + horizon)
         #show heading: it => { v(0.5em) + it + v(0.2em) }
         #show figure: it => { v(0.4em) + it + v(0.4em) }
         #set table(stroke: (_, y) => (
@@ -272,6 +273,10 @@ Die Modellierung des Problems erfordert einige vereinfachende Annahmen:
        "Nebenbedingung (@eq-zuweisung) stellt sicher..."
      - Tabellenbeschriftung: ": Beschriftung {#tbl-label}" unter der Tabelle.
      - Gleichungslabel: {#eq-label} direkt nach $$.
+     - Bei Nebenbedingungen mit Quantor \qquad (2 em) vor \forall verwenden,
+       damit zwischen Ausdruck und Indexmenge ein sichtbarer Abstand bleibt,
+       z.B. "= 1 \qquad \forall i \in \mathcal{I}". Die Gleichungsnummern
+       werden automatisch rechtsbündig am Seitenrand gesetzt.
 
      TIPPS ZUR TABELLENGESTALTUNG
      - Pipe-Tabellen mit Booktabs-Formatierung verwenden (Quarto erledigt das).
@@ -303,15 +308,15 @@ $$ {#eq-zielfunktion}
 unter den Nebenbedingungen:
 
 $$
-\sum_{j \in \mathcal{J}} x_{ij} = 1 \quad \forall i \in \mathcal{I}
+\sum_{j \in \mathcal{J}} x_{ij} = 1 \qquad \forall i \in \mathcal{I}
 $$ {#eq-zuweisung}
 
 $$
-\sum_{i \in \mathcal{J}} x_{ij} = 1 \quad \forall j \in \mathcal{I}
+\sum_{i \in \mathcal{J}} x_{ij} = 1 \qquad \forall j \in \mathcal{I}
 $$ {#eq-fluss}
 
 $$
-x_{ij} \in \{0, 1\} \quad \forall i, j \in \mathcal{J}
+x_{ij} \in \{0, 1\} \qquad \forall i, j \in \mathcal{J}
 $$ {#eq-binaer}
 
 
