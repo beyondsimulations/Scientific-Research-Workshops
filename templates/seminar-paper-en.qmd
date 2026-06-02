@@ -72,6 +72,7 @@ format:
     include-in-header:
       text: |
         #set par(leading: 0.85em)
+        #set math.equation(numbering: "(1)", number-align: end + horizon)
         #show heading: it => { v(0.5em) + it + v(0.2em) }
         #show figure: it => { v(0.4em) + it + v(0.4em) }
         #set table(stroke: (_, y) => (
@@ -256,6 +257,10 @@ The modeling of the problem requires several simplifying assumptions:
      - Reference constraints by label: "Constraint (@eq-assignment) ensures..."
      - Table caption: ": Caption {#tbl-label}" below the table.
      - Equation label: {#eq-label} right after closing $$.
+     - For constraints with a quantifier, use \qquad (2 em) before \forall
+       to keep a visible gap between the expression and the index domain,
+       e.g. "= 1 \qquad \forall i \in \mathcal{I}". Equation numbers are
+       automatically right-aligned at the page margin.
 
      TABLE DESIGN TIPS
      - Use pipe tables with booktabs-style formatting (Quarto handles this).
@@ -287,15 +292,15 @@ $$ {#eq-objective}
 subject to:
 
 $$
-\sum_{j \in \mathcal{J}} x_{ij} = 1 \quad \forall i \in \mathcal{I}
+\sum_{j \in \mathcal{J}} x_{ij} = 1 \qquad \forall i \in \mathcal{I}
 $$ {#eq-assignment}
 
 $$
-\sum_{i \in \mathcal{J}} x_{ij} = 1 \quad \forall j \in \mathcal{I}
+\sum_{i \in \mathcal{J}} x_{ij} = 1 \qquad \forall j \in \mathcal{I}
 $$ {#eq-flow}
 
 $$
-x_{ij} \in \{0, 1\} \quad \forall i, j \in \mathcal{J}
+x_{ij} \in \{0, 1\} \qquad \forall i, j \in \mathcal{J}
 $$ {#eq-binary}
 
 

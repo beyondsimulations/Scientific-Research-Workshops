@@ -1288,12 +1288,14 @@ _freeze/
     </div>
   </div>
 </footer>
-<script src="https://chat.beyondsimulations.com/widget.js"></script>
+<script defer="" src="https://oshu.eu/widget.js"></script>
 <script>
-  ChatWidget.init({
-    apiUrl: "https://chat.beyondsimulations.com",
-    tenant: "platform",
-    agent: "thesis-helper",
+  document.addEventListener('DOMContentLoaded', function () {
+    ChatWidget.init({
+      tenant: "platform",
+      agent: "thesis-helper",
+      layoutMode: "sidebar",
+    });
   });
 </script>
 
