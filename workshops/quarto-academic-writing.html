@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr.&nbsp;Tobias Vlćek">
+<meta name="author" content="Prof.&nbsp;Dr.&nbsp;Knut Haase">
 
 <title>Quarto for Academic Writing – Scientific Research Workshops</title>
 <style>
@@ -305,9 +306,10 @@ window.Quarto = {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Authors</div>
     <div class="quarto-title-meta-contents">
              <p>Dr.&nbsp;Tobias Vlćek </p>
+             <p>Prof.&nbsp;Dr.&nbsp;Knut Haase </p>
           </div>
   </div>
     
@@ -368,7 +370,7 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Quarto produces <strong>publication-quality</strong> PDFs via Typst with no need to install a full TeX distribution!</p>
+<p>Quarto produces <strong>publication-quality</strong> PDFs. With Typst (our recommendation) there is no need to install a full TeX distribution!</p>
 </div>
 </div>
 </div>
@@ -410,7 +412,7 @@ window.Quarto = {
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install quarto</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Or download the installer from <a href="https://quarto.org/docs/get-started/">quarto.org</a></p>
 <p><strong>Windows</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">winget</span> install Posit.Quarto</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>winget install Posit<span class="op">.</span><span class="fu">Quarto</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Or download the installer from <a href="https://quarto.org/docs/get-started/">quarto.org</a></p>
 <p><strong>Linux</strong></p>
 <p>Download the <code>.deb</code> or <code>.rpm</code> package from <a href="https://quarto.org/docs/get-started/">quarto.org</a></p>
@@ -419,7 +421,7 @@ window.Quarto = {
 </section>
 <section id="pdf-output-with-typst" class="level2">
 <h2 class="anchored" data-anchor-id="pdf-output-with-typst">PDF output with Typst</h2>
-<p>Quarto uses <span class="highlight">Typst</span> for PDF rendering. It is <strong>built in</strong>, so there is no need to install a full TeX distribution (saves several GB). Simply set <code>format: typst</code> in your YAML frontmatter.</p>
+<p>Quarto can render PDFs two ways: with <strong>Typst</strong> (set <code>format: typst</code>) or with <strong>LaTeX</strong> (the default <code>format: pdf</code>). LaTeX needs a full TeX distribution installed (several GB), whereas Typst is <strong>bundled with Quarto</strong> and needs no extra installation. <span class="highlight">We recommend Typst</span> for this course — simply set <code>format: typst</code> in your YAML frontmatter.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Paper"</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
@@ -433,7 +435,7 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Typst is fast and produces clean PDFs. It compiles in milliseconds rather than seconds.</p>
+<p>Typst is fast and produces clean PDFs, typically compiling much faster than LaTeX.</p>
 </div>
 </div>
 </div>
@@ -1209,7 +1211,7 @@ window.Quarto = {
 </ul>
     </div>   
     <div class="nav-footer-center">
-<p>Scientific Research Workshops, Tobias Vlćek<br>CC BY-NC-SA 4.0</p>
+<p>Scientific Research Workshops, Tobias Vlćek &amp; Knut Haase<br>CC BY-NC-SA 4.0</p>
 <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Scientific-Research-Workshops/edit/main/workshops/quarto-academic-writing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Scientific-Research-Workshops/blob/main/workshops/quarto-academic-writing.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Scientific-Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;

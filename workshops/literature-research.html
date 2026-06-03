@@ -449,7 +449,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Create a Google Scholar profile and set up <strong>alerts</strong> for your search terms. You will be notified when new papers match your query.</p>
+<p>Set up <strong>alerts</strong> for your search terms by running a search and clicking the envelope icon (you only need a Google account, not a public profile). You will be notified when new papers match your query.</p>
 </div>
 </div>
 </div>
@@ -520,6 +520,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><strong>NOT</strong> — exclude a term: <code>"optimization" NOT "continuous"</code></li>
 <li><strong>Wildcards</strong> — match variations: <code>optimi*</code> matches optimize, optimization, optimizing</li>
 </ul>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Operator support varies by database. Google Scholar does not recognize a spelled-out <code>NOT</code> — put a minus sign directly before the term instead (<code>-continuous</code>) — and its <code>*</code> works as a whole-word placeholder inside a phrase rather than matching word stems. Truncation wildcards like <code>optimi*</code> work in Scopus and Web of Science.</p>
+</div>
+</div>
+</div>
 <p>A complete search string for our example:</p>
 <pre><code>("vehicle routing" OR "VRP") AND
 ("metaheuristic" OR "genetic algorithm" OR
@@ -668,7 +678,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="columns">
 <div class="column" style="width:45%;">
 <p><strong>In your <code>.qmd</code> file:</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Recent work by <span class="co">[</span><span class="ot">@taillard1993</span><span class="co">]</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Recent work by @taillard1993</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>shows that...</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div><div class="column" style="width:10%;">
 
@@ -1281,7 +1291,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
     </div>   
     <div class="nav-footer-center">
-<p>Scientific Research Workshops, Tobias Vlćek<br>CC BY-NC-SA 4.0</p>
+<p>Scientific Research Workshops, Tobias Vlćek &amp; Knut Haase<br>CC BY-NC-SA 4.0</p>
 <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Scientific-Research-Workshops/edit/main/workshops/literature-research.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Scientific-Research-Workshops/blob/main/workshops/literature-research.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Scientific-Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;

@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr.&nbsp;Tobias Vlćek">
+<meta name="author" content="Prof.&nbsp;Dr.&nbsp;Knut Haase">
 
 <title>Git and GitHub – Scientific Research Workshops</title>
 <style>
@@ -280,9 +281,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Authors</div>
     <div class="quarto-title-meta-contents">
              <p>Dr.&nbsp;Tobias Vlćek </p>
+             <p>Prof.&nbsp;Dr.&nbsp;Knut Haase </p>
           </div>
   </div>
     
@@ -510,7 +512,7 @@ essay_final_REALLY_FINAL_revised.docx</code></pre>
 </div>
 </div>
 </div>
-<p>To see all your commits in a compact view, run <code>git log --oneline</code>. Each line shows a short identifier (the commit hash) and your message, forming the timeline of your project. To see what changed since your last commit, run <code>git diff</code>. Zed’s source control panel shows diffs visually, so you can see exactly which lines were added, changed, or removed without memorizing the command.</p>
+<p>To see all your commits in a compact view, run <code>git log --oneline</code>. Each line shows a short identifier (the commit hash) and your message, forming the timeline of your project. To see your unstaged changes (what you have edited but not yet run <code>git add</code> on), run <code>git diff</code>. Zed’s source control panel shows diffs visually, so you can see exactly which lines were added, changed, or removed without memorizing the command.</p>
 </section>
 <section id="ignoring-files-you-do-not-need" class="level2">
 <h2 class="anchored" data-anchor-id="ignoring-files-you-do-not-need">Ignoring files you do not need</h2>
@@ -552,7 +554,7 @@ _freeze/
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>GitHub will ask you to log in the first time you push. If the login prompts become annoying, look into SSH keys or the GitHub CLI (<code>gh auth login</code>) for a smoother setup.</p>
+<p>GitHub will ask you to authenticate the first time you push. Over HTTPS this needs a personal access token (or the browser/credential-manager popup), not your account password. If the prompts become annoying, look into SSH keys or the GitHub CLI (<code>gh auth login</code>) for a smoother setup.</p>
 </div>
 </div>
 </div>
@@ -1281,7 +1283,7 @@ _freeze/
 </ul>
     </div>   
     <div class="nav-footer-center">
-<p>Scientific Research Workshops, Tobias Vlćek<br>CC BY-NC-SA 4.0</p>
+<p>Scientific Research Workshops, Tobias Vlćek &amp; Knut Haase<br>CC BY-NC-SA 4.0</p>
 <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Scientific-Research-Workshops/edit/main/workshops/git-github.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Scientific-Research-Workshops/blob/main/workshops/git-github.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Scientific-Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;

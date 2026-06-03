@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Dr.&nbsp;Tobias Vlćek">
+<meta name="author" content="Prof.&nbsp;Dr.&nbsp;Knut Haase">
 
 <title>Working with AI – Scientific Research Workshops</title>
 <style>
@@ -272,9 +273,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-heading">Authors</div>
     <div class="quarto-title-meta-contents">
              <p>Dr.&nbsp;Tobias Vlćek </p>
+             <p>Prof.&nbsp;Dr.&nbsp;Knut Haase </p>
           </div>
   </div>
     
@@ -318,7 +320,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Modern LLMs use the <span class="highlight">Transformer architecture</span>, introduced in “<a href="https://arxiv.org/abs/1706.03762">Attention is All You Need</a>” (Vaswani et al., 2017).</p>
 <p><strong>The process (simplified):</strong></p>
 <ol type="1">
-<li><strong>Tokenization:</strong> Text is split into <em>tokens</em>, meaning not whole words but subwords like “un-”, “break”, “-able”. This lets the model handle words it has never seen before.</li>
+<li><strong>Tokenization:</strong> Text is split into <em>tokens</em>. A token is often a whole word, but longer or rarer words are broken into subword pieces like “un-”, “break”, “-able”. This lets the model handle words it has never seen before.</li>
 <li><strong>Relationship mapping:</strong> The model builds a mathematical representation of how these tokens relate to each other</li>
 <li><strong>Attention mechanism:</strong> The model focuses on the <span class="highlight">most relevant parts</span> of the input to generate each output token</li>
 </ol>
@@ -328,7 +330,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>“The cat sat on the mat because <strong>it</strong> was warm.” Attention helps the model understand that “it” refers to “the mat,” not “the cat.”</p>
+<p>“The cat did not fit in the box because <strong>it</strong> was too small.” Attention helps the model understand that “it” refers to “the box,” not “the cat.”</p>
 </div>
 </div>
 </div>
@@ -457,7 +459,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td>OpenAI</td>
-<td>GPT-5.4</td>
+<td>GPT-5 series</td>
 <td>General purpose, multimodal</td>
 </tr>
 <tr class="even">
@@ -536,7 +538,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 </div>
-<p>All four offer free access to capable models, while paid tiers unlock stronger models and higher usage limits. Mistral offers an <span class="highlight">affordable student tier</span> with access to Mistral Vibe (not flawless, but acceptable).</p>
+<p>All four offer free access to capable models, while paid tiers unlock stronger models and higher usage limits. Mistral also offers an <span class="highlight">affordable student tier</span> that includes Mistral Vibe, its terminal-based coding agent (covered below).</p>
 <p>Every app also comes with a <span class="highlight">harness</span>, a system that gives the model <strong>tools and capabilities</strong>. Same model, different harness = <strong>completely different results</strong>.</p>
 <p><strong>Different apps, different harnesses:</strong></p>
 <ul>
@@ -599,7 +601,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="zed-a-modern-code-editor" class="level2">
 <h2 class="anchored" data-anchor-id="zed-a-modern-code-editor">Zed: A modern code editor</h2>
-<p>Zed is the <span class="highlight">recommended IDE for this course</span> — a modern, fast code editor <strong>built in Rust</strong> with a built-in AI assistant supporting <strong>multiple model support</strong>.</p>
+<p>Zed is the <span class="highlight">recommended IDE for this course</span> — a modern, fast code editor <strong>built in Rust</strong> with a built-in AI assistant supporting <strong>multiple models</strong>.</p>
 <p><strong>Features:</strong></p>
 <ul>
 <li>Supports cloud models (Claude, GPT) and local models (Ollama)</li>
@@ -643,7 +645,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="terminal-based-ai-tools" class="level2">
 <h2 class="anchored" data-anchor-id="terminal-based-ai-tools">Terminal-based AI tools</h2>
-<p>Terminal-based coding assistants let you work with AI <span class="highlight">directly from the command line</span>, without leaving your editor or browser. Two options stand out:</p>
+<p>Terminal-based coding assistants let you work with AI <span class="highlight">directly from the command line</span>, without leaving your editor or browser. Several options stand out:</p>
 <p><strong>OpenCode</strong></p>
 <ul>
 <li><span class="highlight">Open-source</span> terminal-based AI coding assistant</li>
@@ -660,13 +662,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install <span class="at">--cask</span> claude-code</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>For other platforms, see <a href="https://claude.ai/code">claude.ai/code</a>.</p>
+<p><strong>Mistral Vibe</strong></p>
+<ul>
+<li>Mistral’s <span class="highlight">open-source CLI coding agent</span>, from the European provider</li>
+<li>Scans your project’s file structure and Git status, and understands natural language commands</li>
+<li>Can plan, modify, and execute changes across <strong>multiple files</strong> from the terminal</li>
+</ul>
+<p>For installation and details, see the <a href="https://github.com/mistralai/mistral-vibe">Mistral Vibe repository</a>.</p>
 <div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>Claude Code requires a Claude subscription or Anthropic API key. OpenCode is free but requires you to bring your own API key for whichever provider you choose.</p>
+<p>Claude Code requires a Claude subscription or Anthropic API key. OpenCode is free but requires you to bring your own API key for whichever provider you choose. Mistral Vibe is included in Mistral’s <a href="https://help.mistral.ai/en/articles/347553-as-a-student-am-i-eligible-for-a-discount-on-le-chat-pro">student subscription</a>.</p>
 </div>
 </div>
 </div>
@@ -713,6 +722,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>Terminal agent</td>
 <td>Multi-step tasks</td>
 <td>API costs</td>
+</tr>
+<tr class="odd">
+<td><strong>Mistral Vibe</strong></td>
+<td>Terminal agent</td>
+<td>Multi-file changes</td>
+<td>Free with student tier</td>
 </tr>
 </tbody>
 </table>
@@ -1287,7 +1302,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
     </div>   
     <div class="nav-footer-center">
-<p>Scientific Research Workshops, Tobias Vlćek<br>CC BY-NC-SA 4.0</p>
+<p>Scientific Research Workshops, Tobias Vlćek &amp; Knut Haase<br>CC BY-NC-SA 4.0</p>
 <div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/beyondsimulations/Scientific-Research-Workshops/edit/main/workshops/large-language-models.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/beyondsimulations/Scientific-Research-Workshops/blob/main/workshops/large-language-models.qmd" class="toc-action"><i class="bi empty"></i>View source</a></li><li><a href="https://github.com/beyondsimulations/Scientific-Research-Workshops/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
