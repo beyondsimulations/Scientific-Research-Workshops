@@ -2,8 +2,8 @@
 title: Frequently Asked Questions
 subtitle: Common questions from students about seminars and theses
 author:
-  - Dr. Tobias Vlćek
   - Prof. Dr. Knut Haase
+  - Dr. Tobias Vlćek
 ---
 
 

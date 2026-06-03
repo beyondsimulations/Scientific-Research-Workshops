@@ -1,6 +1,9 @@
 ---
 title: "Scientific Writing at the Institute of Logistics, Transport and Production"
 subtitle: "University of Hamburg"
+author:
+  - "Prof. Dr. Knut Haase"
+  - "Dr. Tobias Vlćek"
 
 ---
 

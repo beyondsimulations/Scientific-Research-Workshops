@@ -2,8 +2,8 @@
 title: "Frequently Asked Questions"
 subtitle: "Common questions from students about seminars and theses"
 author:
-  - "Dr. Tobias Vlćek"
   - "Prof. Dr. Knut Haase"
+  - "Dr. Tobias Vlćek"
 ---
 
 This page collects the questions we get asked most often. If your question is not covered here, contact me at [tobias.vlcek@uni-hamburg.de](mailto:tobias.vlcek@uni-hamburg.de?subject=Question%3A%20%3CYour%20subject%3E).

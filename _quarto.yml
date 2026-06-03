@@ -76,6 +76,7 @@ website:
 format:
   hugo-md: default
   html:
+    format-links: false
     theme:
       - default
       - styles.scss

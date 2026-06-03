@@ -2,8 +2,8 @@
 title: Git and GitHub
 subtitle: Version control and project organization for your thesis
 author:
-  - Dr. Tobias Vlćek
   - Prof. Dr. Knut Haase
+  - Dr. Tobias Vlćek
 ---
 
 

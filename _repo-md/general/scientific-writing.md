@@ -2,8 +2,8 @@
 title: Scientific Writing
 subtitle: How to structure and write your seminar paper or thesis
 author:
-  - Dr. Tobias Vlćek
   - Prof. Dr. Knut Haase
+  - Dr. Tobias Vlćek
 ---
 
 

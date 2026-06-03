@@ -2,8 +2,8 @@
 title: AI Prompting for Researchers
 subtitle: Getting useful results from AI with the RBTF framework
 author:
-  - Dr. Tobias Vlćek
   - Prof. Dr. Knut Haase
+  - Dr. Tobias Vlćek
 ---
 
 

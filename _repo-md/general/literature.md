@@ -2,8 +2,8 @@
 title: Literature and Resources
 subtitle: Tools and references from the workshops
 author:
-  - Dr. Tobias Vlćek
   - Prof. Dr. Knut Haase
+  - Dr. Tobias Vlćek
 ---
 
 
