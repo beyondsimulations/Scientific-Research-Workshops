@@ -1,7 +1,9 @@
 ---
 title: "Working with AI"
 subtitle: "How LLMs work and which coding tools to use"
-author: "Dr. Tobias Vlćek"
+author:
+  - "Dr. Tobias Vlćek"
+  - "Prof. Dr. Knut Haase"
 ---
 
 # [LLM Fundamentals]{.flow}

@@ -1,7 +1,9 @@
 ---
 title: "Templates"
 subtitle: "Getting started with your seminar paper or thesis"
-author: "Dr. Tobias Vlćek"
+author:
+  - "Dr. Tobias Vlćek"
+  - "Prof. Dr. Knut Haase"
 code-links:
   - text: Template (English)
     icon: file-earmark-text

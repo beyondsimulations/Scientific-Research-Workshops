@@ -1,7 +1,9 @@
 ---
 title: "Literature and Resources"
 subtitle: "Tools and references from the workshops"
-author: "Dr. Tobias Vlćek"
+author:
+  - "Dr. Tobias Vlćek"
+  - "Prof. Dr. Knut Haase"
 ---
 
 This page collects the tools, databases, and references mentioned across the workshops. Use it as a quick-reference when you need a link or want to explore a topic further.

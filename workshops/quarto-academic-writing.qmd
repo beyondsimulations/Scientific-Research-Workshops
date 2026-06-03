@@ -1,7 +1,9 @@
 ---
 title: "Quarto for Academic Writing"
 subtitle: "Write in Markdown, render to PDF with citations and cross-references"
-author: "Dr. Tobias Vlćek"
+author:
+  - "Dr. Tobias Vlćek"
+  - "Prof. Dr. Knut Haase"
 ---
 
 # [Quarto for Academic Writing]{.flow}

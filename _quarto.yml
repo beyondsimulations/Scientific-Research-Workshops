@@ -60,7 +60,7 @@ website:
         href: general/faq.qmd
 
   page-footer:
-    center: "Scientific Research Workshops, Tobias Vlćek</br>CC BY-NC-SA 4.0"
+    center: "Scientific Research Workshops, Tobias Vlćek & Knut Haase</br>CC BY-NC-SA 4.0"
     left:
       - icon: github
         href: https://github.com/beyondsimulations/Scientific-Research-Workshops
@@ -91,12 +91,14 @@ format:
       - general/header.html
     include-after-body:
       text: |
-        <script src="https://chat.beyondsimulations.com/widget.js"></script>
+        <script defer src="https://oshu.eu/widget.js"></script>
         <script>
-          ChatWidget.init({
-            apiUrl: "https://chat.beyondsimulations.com",
-            tenant: "platform",
-            agent: "thesis-helper",
+          document.addEventListener('DOMContentLoaded', function () {
+            ChatWidget.init({
+              tenant: "platform",
+              agent: "thesis-helper",
+              layoutMode: "sidebar",
+            });
           });
         </script>
 
