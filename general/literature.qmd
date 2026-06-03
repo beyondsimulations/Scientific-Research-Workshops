@@ -14,7 +14,7 @@ This page collects the tools, databases, and references mentioned across the wor
 
 These are LLMs hosted by companies, which you can access through their websites or APIs. Free tiers are available for most of them; paid tiers unlock more capable models and higher usage limits.
 
-- [OpenAI (ChatGPT)](https://chatgpt.com): The creators of ChatGPT, currently on GPT-5.4. General-purpose models with text, image, and voice capabilities. The free tier uses a weaker model; paid plans give access to the latest version.
+- [OpenAI (ChatGPT)](https://chatgpt.com): The creators of ChatGPT, currently on the GPT-5 series. General-purpose models with text, image, and voice capabilities. The free tier uses a weaker model; paid plans give access to the latest version.
 - [Anthropic (Claude)](https://claude.ai): Strong at reasoning, coding, and handling long documents. Claude Opus and Sonnet are the main models, with a limited free tier.
 - [Google (Gemini)](https://gemini.google.com): Google's LLM with tight integration into Google services (Docs, Sheets, Gmail) and multimodal capabilities including image and video understanding.
 - [Mistral (Le Chat)](https://chat.mistral.ai/): A European provider based in France. Offers an affordable student tier and access to Mistral Vibe, and their models run well for both English and European languages.

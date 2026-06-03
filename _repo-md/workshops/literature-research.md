@@ -93,7 +93,7 @@ Useful search techniques: use <span class="highlight">quotes for exact phrases</
 
 > **Tip**
 >
-> Create a Google Scholar profile and set up **alerts** for your search terms. You will be notified when new papers match your query.
+> Set up **alerts** for your search terms by running a search and clicking the envelope icon (you only need a Google account, not a public profile). You will be notified when new papers match your query.
 
 ## Specialized databases
 
@@ -119,6 +119,10 @@ Use <span class="highlight">Boolean operators</span> to combine search terms:
 - **OR** --- either term can appear: `"genetic algorithm" OR "simulated annealing"`
 - **NOT** --- exclude a term: `"optimization" NOT "continuous"`
 - **Wildcards** --- match variations: `optimi*` matches optimize, optimization, optimizing
+
+> **Note**
+>
+> Operator support varies by database. Google Scholar does not recognize a spelled-out `NOT` --- put a minus sign directly before the term instead (`-continuous`) --- and its `*` works as a whole-word placeholder inside a phrase rather than matching word stems. Truncation wildcards like `optimi*` work in Scopus and Web of Science.
 
 A complete search string for our example:
 
@@ -209,7 +213,7 @@ The workflow for your seminar or thesis:
 **In your `.qmd` file:**
 
 ``` markdown
-Recent work by [@taillard1993]
+Recent work by @taillard1993
 shows that...
 ```
 

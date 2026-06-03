@@ -1,7 +1,9 @@
 ---
 title: AI Prompting for Researchers
 subtitle: Getting useful results from AI with the RBTF framework
-author: Dr. Tobias Vlćek
+author:
+  - Dr. Tobias Vlćek
+  - Prof. Dr. Knut Haase
 ---
 
 
@@ -39,7 +41,7 @@ The AI does not know <span class="highlight">who you are</span> --- whether you 
 >
 > **Without context, AI gives you the average answer for everyone --- which helps no one.**
 
-The quality of the output is <span class="highlight">directly proportional</span> to the quality of the input. This is true for every AI tool, whether it is ChatGPT, Claude, Gemini, or any other system.
+The quality of the output <span class="highlight">improves with</span> the quality of the input. This is true for every AI tool, whether it is ChatGPT, Claude, Gemini, or any other system.
 
 ## Context and iteration
 
@@ -122,7 +124,7 @@ Your first response will rarely be exactly what you need. That is normal. Use <s
 >
 > "My data is not normally distributed according to the Shapiro-Wilk test. What non-parametric alternative should I use, and how do I run it in SPSS? Also, how should I report the results in APA format?"
 
-**Prompt 1** would get a generic overview of statistical tests. **Prompt 2** gives enough context for a <span class="highlight">specific recommendation</span>. **Prompt 3** addresses a real complication and asks for <span class="highlight">usable output</span>. Each iteration <span class="highlight">builds on the previous response</span>, turning a vague question into a concrete answer because the AI retains context from the full conversation.
+**Prompt 1** would get a generic overview of statistical tests. **Prompt 2** gives enough context for a <span class="highlight">specific recommendation</span>. **Prompt 3** addresses a real complication and asks for <span class="highlight">usable output</span>. Each iteration <span class="highlight">builds on the previous response</span>, turning a vague question into a concrete answer because the AI retains context from earlier turns in the same conversation.
 
 ## From lazy prompt to RBTF prompt
 

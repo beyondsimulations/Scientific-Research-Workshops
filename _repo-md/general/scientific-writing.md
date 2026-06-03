@@ -1,7 +1,9 @@
 ---
 title: Scientific Writing
 subtitle: How to structure and write your seminar paper or thesis
-author: Dr. Tobias Vlćek
+author:
+  - Dr. Tobias Vlćek
+  - Prof. Dr. Knut Haase
 ---
 
 
@@ -190,7 +192,7 @@ You are the author of your paper, not the AI. You are responsible for every clai
 > - [ ] Sentences never start with a math symbol ("The variable $x$..." not "$x$ is...")
 > - [ ] Notation is consistent throughout
 > - [ ] No orphan sections (a single subsection under a section)
-> - [ ] Each section is at least one page long
+> - [ ] No subsection shorter than about half a page (merge short ones)
 > - [ ] Acronyms are defined on first use
 > - [ ] No Wikipedia or lecture slides in the bibliography
 > - [ ] En-dashes for ranges (pages 5--10), not hyphens

@@ -1,7 +1,9 @@
 ---
 title: Quarto for Academic Writing
 subtitle: Write in Markdown, render to PDF with citations and cross-references
-author: Dr. Tobias Vlćek
+author:
+  - Dr. Tobias Vlćek
+  - Prof. Dr. Knut Haase
 ---
 
 
@@ -38,7 +40,7 @@ Quarto is an <span class="highlight">open-source scientific publishing system</s
 
 > **Note**
 >
-> Quarto produces **publication-quality** PDFs via Typst with no need to install a full TeX distribution!
+> Quarto produces **publication-quality** PDFs. With Typst (our recommendation) there is no need to install a full TeX distribution!
 
 **LaTeX**
 
@@ -84,7 +86,7 @@ Or download the installer from [quarto.org](https://quarto.org/docs/get-started/
 
 **Windows**
 
-``` bash
+``` powershell
 winget install Posit.Quarto
 ```
 
@@ -101,7 +103,7 @@ sudo dpkg -i quarto-*.deb
 
 ## PDF output with Typst
 
-Quarto uses <span class="highlight">Typst</span> for PDF rendering. It is **built in**, so there is no need to install a full TeX distribution (saves several GB). Simply set `format: typst` in your YAML frontmatter.
+Quarto can render PDFs two ways: with **Typst** (set `format: typst`) or with **LaTeX** (the default `format: pdf`). LaTeX needs a full TeX distribution installed (several GB), whereas Typst is **bundled with Quarto** and needs no extra installation. <span class="highlight">We recommend Typst</span> for this course --- simply set `format: typst` in your YAML frontmatter.
 
 ``` yaml
 ---
@@ -115,7 +117,7 @@ format:
 
 > **Tip**
 >
-> Typst is fast and produces clean PDFs. It compiles in milliseconds rather than seconds.
+> Typst is fast and produces clean PDFs, typically compiling much faster than LaTeX.
 
 ## Recommended editors
 

@@ -1,7 +1,9 @@
 ---
 title: Git and GitHub
 subtitle: Version control and project organization for your thesis
-author: Dr. Tobias Vlćek
+author:
+  - Dr. Tobias Vlćek
+  - Prof. Dr. Knut Haase
 ---
 
 
@@ -172,7 +174,7 @@ git commit -m "Add project description to README"
 >
 > Write messages that describe <span class="highlight">what changed and why</span>. Six months from now, "update" tells you nothing. "Fix broken cross-reference in chapter 3" tells you everything.
 
-To see all your commits in a compact view, run `git log --oneline`. Each line shows a short identifier (the commit hash) and your message, forming the timeline of your project. To see what changed since your last commit, run `git diff`. Zed's source control panel shows diffs visually, so you can see exactly which lines were added, changed, or removed without memorizing the command.
+To see all your commits in a compact view, run `git log --oneline`. Each line shows a short identifier (the commit hash) and your message, forming the timeline of your project. To see your unstaged changes (what you have edited but not yet run `git add` on), run `git diff`. Zed's source control panel shows diffs visually, so you can see exactly which lines were added, changed, or removed without memorizing the command.
 
 ## Ignoring files you do not need
 
@@ -211,7 +213,7 @@ Refresh your GitHub page. Your files and commit history are now visible online.
 
 > **Note**
 >
-> GitHub will ask you to log in the first time you push. If the login prompts become annoying, look into SSH keys or the GitHub CLI (`gh auth login`) for a smoother setup.
+> GitHub will ask you to authenticate the first time you push. Over HTTPS this needs a personal access token (or the browser/credential-manager popup), not your account password. If the prompts become annoying, look into SSH keys or the GitHub CLI (`gh auth login`) for a smoother setup.
 
 After the initial setup, the day-to-day cycle is simple. Both approaches (Zed's visual panel and the terminal) accomplish the same thing:
 

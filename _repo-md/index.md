@@ -14,7 +14,7 @@ If you are writing a seminar paper, bachelor thesis, or master thesis at our ins
 - **[Literature Research](workshops/literature-research.qmd):** Finding, evaluating, and organizing academic sources. Covers Google Scholar, specialized databases, Boolean search strings, snowballing, AI discovery tools (Semantic Scholar, Connected Papers, Elicit), and a Zotero workflow for reference management.
 - **[AI Prompting](workshops/prompting.qmd):** Getting useful results from AI instead of generic ones. Introduces the RBTF framework (Role, Background, Task, Format) and shows how to iterate on responses with before-and-after examples from real research tasks.
 - **[Git & GitHub](workshops/git-github.qmd):** Version control for your thesis project. Track changes with Git, organize your project folder, use Zed's Git panel for daily work, and push to GitHub as a backup. Also covers `.gitignore` and branching.
-- **[Working with AI](workshops/large-language-models.qmd):** How large language models work and how to pick the right tool. Covers models, apps, and harnesses, then walks through the coding tools: Zed, GitHub Copilot, OpenCode, and Claude Code.
+- **[Working with AI](workshops/large-language-models.qmd):** How large language models work and how to pick the right tool. Covers models, apps, and harnesses, then walks through the coding tools: Zed, GitHub Copilot, OpenCode, Claude Code, and Mistral Vibe.
 - **[Quarto for Academic Writing](workshops/quarto-academic-writing.qmd):** Write your paper in Markdown instead of LaTeX or Word. Covers headings, figures, tables, math, BibTeX citations, cross-references, Typst formatting, and PDF output.
 
 # Templates

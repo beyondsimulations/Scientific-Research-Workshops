@@ -1,7 +1,9 @@
 ---
 title: Templates
 subtitle: Getting started with your seminar paper or thesis
-author: Dr. Tobias Vlćek
+author:
+  - Dr. Tobias Vlćek
+  - Prof. Dr. Knut Haase
 code-links:
   - text: Template (English)
     icon: file-earmark-text
@@ -32,7 +34,7 @@ The Institute of Logistics, Transport and Production supervises three types of a
 
 |  | Seminar Paper | Bachelor Thesis | Master Thesis |
 |:-----------------|:-----------------|:-----------------|:-----------------|
-| **Length** | 14--16 pages | 26--40 pages | 38--50 pages |
+| **Length** | 14--18 pages | 26--40 pages | 38--50 pages |
 | **Literature review** | Focused overview | Comprehensive | Exhaustive, with clear gap analysis |
 | **Own contribution** | Reproduce or extend an existing approach | Apply a method to a new problem or dataset | Develop or significantly extend a method |
 | **Computational study** | Small-scale | Expected | Required (thorough, with benchmarks) |
@@ -41,7 +43,7 @@ The Institute of Logistics, Transport and Production supervises three types of a
 Table 1: Comparison of academic work types
 </div>
 
-These are general guidelines. Your supervisor may set different expectations, so clarify the scope early.
+Page counts include images, tables, and references, but exclude the title page, table of contents, and the lists of abbreviations and symbols. These are general guidelines. Your supervisor may set different expectations, so clarify the scope early.
 
 # Evaluation Criteria
 
@@ -112,12 +114,12 @@ Table 4: Required files
 
 > **Important**
 >
-> You must create an `images/` subfolder yourself and place `Image.pdf` inside it. The template references `images/Image.pdf` as a placeholder figure, so rendering will fail until both the folder and the file are in place. Use the same `images/` folder for your own figures, and do not delete `typst-show.typ` --- it is required for the custom title page.
+> If you download the files individually from the sidebar, recreate the `images/` subfolder and place the downloaded `Image.pdf` inside it. The template references `images/Image.pdf` as a placeholder figure, so rendering will fail until both the folder and the file are in place. Use the same `images/` folder for your own figures, and do not delete `typst-show.typ` --- it is required for the custom title page.
 
 ## What the templates include
 
 - Custom UHH title page with university name, faculty, institute, thesis type, supervisor, and your details, all pre-formatted
-- Correct margins and formatting (40/25/30/20mm, 11pt, 1.5 line spacing) matching UHH requirements
+- Correct margins and formatting (left 40 mm, top 30 mm, right 25 mm, bottom 20 mm; 11 pt; 1.5 line spacing) matching UHH requirements
 - Table of contents, list of figures, and list of tables, generated automatically
 - List of abbreviations and list of symbols, pre-filled with examples
 - Citation setup with APA style using `[@key]` syntax

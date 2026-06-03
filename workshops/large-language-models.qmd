@@ -32,12 +32,12 @@ Modern LLMs use the [Transformer architecture]{.highlight}, introduced in "[Atte
 
 **The process (simplified):**
 
-1. **Tokenization:** Text is split into *tokens*, meaning not whole words but subwords like "un-", "break", "-able". This lets the model handle words it has never seen before.
+1. **Tokenization:** Text is split into *tokens*. A token is often a whole word, but longer or rarer words are broken into subword pieces like "un-", "break", "-able". This lets the model handle words it has never seen before.
 2. **Relationship mapping:** The model builds a mathematical representation of how these tokens relate to each other
 3. **Attention mechanism:** The model focuses on the [most relevant parts]{.highlight} of the input to generate each output token
 
 :::{.callout-note}
-"The cat sat on the mat because **it** was warm." Attention helps the model understand that "it" refers to "the mat," not "the cat."
+"The cat did not fit in the box because **it** was too small." Attention helps the model understand that "it" refers to "the box," not "the cat."
 :::
 
 :::{.callout-tip}
@@ -126,7 +126,7 @@ The **foundation model** is the core intelligence. Different providers have diff
 ::: {tbl-colwidths="[20,25,55]"}
 | Provider | Model | Strength |
 |---|---|---|
-| OpenAI | GPT-5.4 | General purpose, multimodal |
+| OpenAI | GPT-5 series | General purpose, multimodal |
 | Anthropic | Claude Opus/Sonnet | Reasoning, coding, long context |
 | Google | Gemini Pro | Google integration, multimodal |
 | Mistral | Mistral Large | Affordable, European provider |
@@ -152,7 +152,7 @@ Apps are [how you access the models]{.highlight}.
 | **Le Chat** | chat.mistral.ai | Mistral |
 :::
 
-All four offer free access to capable models, while paid tiers unlock stronger models and higher usage limits. Mistral offers an [affordable student tier]{.highlight} with access to Mistral Vibe (not flawless, but acceptable).
+All four offer free access to capable models, while paid tiers unlock stronger models and higher usage limits. Mistral also offers an [affordable student tier]{.highlight} that includes Mistral Vibe, its terminal-based coding agent (covered below).
 
 Every app also comes with a [harness]{.highlight}, a system that gives the model **tools and capabilities**. Same model, different harness = **completely different results**.
 
@@ -206,7 +206,7 @@ If you are not on macOS, download links are provided as alternatives for each to
 
 ## Zed: A modern code editor
 
-Zed is the [recommended IDE for this course]{.highlight} — a modern, fast code editor **built in Rust** with a built-in AI assistant supporting **multiple model support**.
+Zed is the [recommended IDE for this course]{.highlight} — a modern, fast code editor **built in Rust** with a built-in AI assistant supporting **multiple models**.
 
 **Features:**
 
@@ -243,7 +243,7 @@ Copilot's code completion can also be activated in Zed if you prefer it over Zed
 
 ## Terminal-based AI tools
 
-Terminal-based coding assistants let you work with AI [directly from the command line]{.highlight}, without leaving your editor or browser. Two options stand out:
+Terminal-based coding assistants let you work with AI [directly from the command line]{.highlight}, without leaving your editor or browser. Several options stand out:
 
 **OpenCode**
 
@@ -269,8 +269,16 @@ brew install --cask claude-code
 
 For other platforms, see [claude.ai/code](https://claude.ai/code).
 
+**Mistral Vibe**
+
+- Mistral's [open-source CLI coding agent]{.highlight}, from the European provider
+- Scans your project's file structure and Git status, and understands natural language commands
+- Can plan, modify, and execute changes across **multiple files** from the terminal
+
+For installation and details, see the [Mistral Vibe repository](https://github.com/mistralai/mistral-vibe).
+
 :::{.callout-note}
-Claude Code requires a Claude subscription or Anthropic API key. OpenCode is free but requires you to bring your own API key for whichever provider you choose.
+Claude Code requires a Claude subscription or Anthropic API key. OpenCode is free but requires you to bring your own API key for whichever provider you choose. Mistral Vibe is included in Mistral's [student subscription](https://help.mistral.ai/en/articles/347553-as-a-student-am-i-eligible-for-a-discount-on-le-chat-pro).
 :::
 
 ## Choosing the right tool
@@ -282,6 +290,7 @@ Claude Code requires a Claude subscription or Anthropic API key. OpenCode is fre
 | **GitHub Copilot** | IDE extension | Inline code suggestions | Free for students |
 | **OpenCode** | Terminal | Quick terminal tasks | Free (bring API key) |
 | **Claude Code** | Terminal agent | Multi-step tasks | API costs |
+| **Mistral Vibe** | Terminal agent | Multi-file changes | Free with student tier |
 :::
 
 [Question]{.question}: When would you use a chat interface vs. a coding agent?

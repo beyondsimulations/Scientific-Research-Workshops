@@ -1,7 +1,9 @@
 ---
 title: Working with AI
 subtitle: How LLMs work and which coding tools to use
-author: Dr. Tobias Vlćek
+author:
+  - Dr. Tobias Vlćek
+  - Prof. Dr. Knut Haase
 ---
 
 
@@ -31,13 +33,13 @@ Modern LLMs use the <span class="highlight">Transformer architecture</span>, int
 
 **The process (simplified):**
 
-1.  **Tokenization:** Text is split into *tokens*, meaning not whole words but subwords like "un-", "break", "-able". This lets the model handle words it has never seen before.
+1.  **Tokenization:** Text is split into *tokens*. A token is often a whole word, but longer or rarer words are broken into subword pieces like "un-", "break", "-able". This lets the model handle words it has never seen before.
 2.  **Relationship mapping:** The model builds a mathematical representation of how these tokens relate to each other
 3.  **Attention mechanism:** The model focuses on the <span class="highlight">most relevant parts</span> of the input to generate each output token
 
 > **Note**
 >
-> "The cat sat on the mat because **it** was warm." Attention helps the model understand that "it" refers to "the mat," not "the cat."
+> "The cat did not fit in the box because **it** was too small." Attention helps the model understand that "it" refers to "the box," not "the cat."
 
 > **Tip**
 >
@@ -119,7 +121,7 @@ The **foundation model** is the core intelligence. Different providers have diff
 
 | Provider  | Model               | Strength                        |
 |-----------|---------------------|---------------------------------|
-| OpenAI    | GPT-5.4             | General purpose, multimodal     |
+| OpenAI    | GPT-5 series        | General purpose, multimodal     |
 | Anthropic | Claude Opus/Sonnet  | Reasoning, coding, long context |
 | Google    | Gemini Pro          | Google integration, multimodal  |
 | Mistral   | Mistral Large       | Affordable, European provider   |
@@ -142,7 +144,7 @@ Apps are <span class="highlight">how you access the models</span>.
 | **Gemini**  | gemini.google.com | Google    |
 | **Le Chat** | chat.mistral.ai   | Mistral   |
 
-All four offer free access to capable models, while paid tiers unlock stronger models and higher usage limits. Mistral offers an <span class="highlight">affordable student tier</span> with access to Mistral Vibe (not flawless, but acceptable).
+All four offer free access to capable models, while paid tiers unlock stronger models and higher usage limits. Mistral also offers an <span class="highlight">affordable student tier</span> that includes Mistral Vibe, its terminal-based coding agent (covered below).
 
 Every app also comes with a <span class="highlight">harness</span>, a system that gives the model **tools and capabilities**. Same model, different harness = **completely different results**.
 
@@ -196,7 +198,7 @@ brew install --cask <app-name>  # GUI applications
 
 ## Zed: A modern code editor
 
-Zed is the <span class="highlight">recommended IDE for this course</span> --- a modern, fast code editor **built in Rust** with a built-in AI assistant supporting **multiple model support**.
+Zed is the <span class="highlight">recommended IDE for this course</span> --- a modern, fast code editor **built in Rust** with a built-in AI assistant supporting **multiple models**.
 
 **Features:**
 
@@ -233,7 +235,7 @@ GitHub Copilot is an AI pair programmer <span class="highlight">integrated into 
 
 ## Terminal-based AI tools
 
-Terminal-based coding assistants let you work with AI <span class="highlight">directly from the command line</span>, without leaving your editor or browser. Two options stand out:
+Terminal-based coding assistants let you work with AI <span class="highlight">directly from the command line</span>, without leaving your editor or browser. Several options stand out:
 
 **OpenCode**
 
@@ -259,9 +261,17 @@ brew install --cask claude-code
 
 For other platforms, see [claude.ai/code](https://claude.ai/code).
 
+**Mistral Vibe**
+
+- Mistral's <span class="highlight">open-source CLI coding agent</span>, from the European provider
+- Scans your project's file structure and Git status, and understands natural language commands
+- Can plan, modify, and execute changes across **multiple files** from the terminal
+
+For installation and details, see the [Mistral Vibe repository](https://github.com/mistralai/mistral-vibe).
+
 > **Note**
 >
-> Claude Code requires a Claude subscription or Anthropic API key. OpenCode is free but requires you to bring your own API key for whichever provider you choose.
+> Claude Code requires a Claude subscription or Anthropic API key. OpenCode is free but requires you to bring your own API key for whichever provider you choose. Mistral Vibe is included in Mistral's [student subscription](https://help.mistral.ai/en/articles/347553-as-a-student-am-i-eligible-for-a-discount-on-le-chat-pro).
 
 ## Choosing the right tool
 
@@ -271,6 +281,7 @@ For other platforms, see [claude.ai/code](https://claude.ai/code).
 | **GitHub Copilot** | IDE extension | Inline code suggestions | Free for students |
 | **OpenCode** | Terminal | Quick terminal tasks | Free (bring API key) |
 | **Claude Code** | Terminal agent | Multi-step tasks | API costs |
+| **Mistral Vibe** | Terminal agent | Multi-file changes | Free with student tier |
 
 <span class="question">Question</span>: When would you use a chat interface vs. a coding agent?
 
