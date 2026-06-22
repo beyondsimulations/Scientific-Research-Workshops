@@ -73,7 +73,7 @@ format:
     include-in-header:
       text: |
         #set text(lang: "de")
-        #set par(leading: 1em)
+        #set par(leading: 1em, justify: true)
         #set math.equation(numbering: "(1)", number-align: end + horizon)
         #show heading: it => { v(0.5em) + it + v(0.2em) }
         #show figure: it => { v(0.4em) + it + v(0.4em) }
