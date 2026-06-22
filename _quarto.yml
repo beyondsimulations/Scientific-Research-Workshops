@@ -12,6 +12,7 @@ project:
     - general/templates.qmd
     - general/literature.qmd
     - general/privacy.qmd
+    - general/imprint.qmd
     - general/faq.qmd
   resources:
     - templates/seminar-paper-en.qmd
@@ -60,7 +61,7 @@ website:
         href: general/faq.qmd
 
   page-footer:
-    center: "Scientific Research Workshops, Tobias Vlćek & Knut Haase</br>CC BY-NC-SA 4.0"
+    center: "Scientific Research Workshops, Tobias Vlćek & Knut Haase</br>CC BY-SA 4.0"
     left:
       - icon: github
         href: https://github.com/beyondsimulations/Scientific-Research-Workshops
@@ -72,6 +73,8 @@ website:
         href: https://tobiasvlcek.com/lectures/
       - icon: shield-check
         href: general/privacy.qmd
+      - icon: file-text
+        href: general/imprint.qmd
 
 format:
   hugo-md: default

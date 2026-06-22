@@ -1,119 +1,72 @@
 ---
 title: Privacy Policy
 subtitle: How we handle your data
-date: '2026-04-01'
+date: '2026-06-22'
 ---
 
 
-## 1. Introduction
+## 1. Controller
 
-*Short version: This policy covers the AI Chatbot on this website --- nothing else. Use the Chatbot, and these rules apply.*
+The controller responsible for data processing on this website is:
 
-This Privacy Policy explains how we collect, use, share, and protect your information when you interact with our AI Chatbot service (the "Chatbot"). It does not cover any other services we may offer.
+Dr. Tobias Vlćek
 
-We take your privacy seriously, and we've tried to write this policy in a way that's actually readable. If anything is unclear, reach out --- our contact details are in Section 2.
+Email: <tobias.vlcek@uni-hamburg.de>
 
-## 2. Data Controller
+This policy covers the AI chat assistant ("Oshu") embedded on this website and the privacy-friendly web analytics (Umami) used to measure site usage. To exercise your rights or for any questions about data processing, please contact us using the details above.
 
-*Short version: Beyond Simulations GmbH is responsible for your data.*
+## 2. AI chat assistant (Oshu)
 
-Beyond Simulations GmbH  
-Am Eich 9d  
-22113 Oststeinbek  
-Germany
+On this website we use an embeddable AI chat assistant operated on our behalf by BeyondSimulations GmbH, Am Eich 9d, 22113 Oststeinbek, Germany ("Oshu") as our processor. A data processing agreement under Art. 28 GDPR is in place with Oshu.
 
-Email: <info@beyondsimulations.com>
+**Purpose:** the assistant answers visitor questions based on content we have provided.
 
-## 3. What We Collect
+**Data processed:** when you use the chat, the messages you enter, the generated responses, and a conversation identifier are processed. Technical data such as your IP address is processed only transiently for security and abuse prevention and is not stored permanently with the conversation. Please do not enter special categories of personal data (Art. 9 GDPR) into the chat.
 
-*Short version: Your messages, a hashed version of your IP, and some technical metadata. We never ask for your name or email.*
+**Legal basis:** Art. 6(1)(f) GDPR (legitimate interest in answering enquiries efficiently). If the chat forms part of a contractual service, Art. 6(1)(b) GDPR.
 
-When you use the Chatbot, here's what we collect:
+## 3. Hosting and inference
 
-- **Your messages and the Chatbot's replies** --- unless you turn on private mode (see below), we store the full text in our database. We do not ask for or store personal identifiers like your name or email alongside these messages.
-- **A pseudonymized user ID** --- we take your IP address and run it through a one-way SHA-256 hash. The result lets us group your messages into a session, but it can't be reversed to recover your actual IP.
-- **Technical metadata** --- timestamps, session and trace IDs, which AI model answered, how many tokens were used, and how long the response took. All of this lives on our self-hosted server at Hetzner in Germany.
-- **Aggregated usage data** --- error rates, performance metrics, and similar statistics that help us keep the service running well. None of this is tied to you individually.
-- **Rate limiting data** --- your IP address and request count are held in server memory to enforce limits (50 chat requests/min, 5 login attempts/min). This data exists only in memory and disappears when the server restarts.
+Data is processed on servers of Hetzner Online GmbH in Falkenstein, Germany. Responses are generated via the EU API of Mistral AI SAS in Paris, France. There is no transfer to a third country, and the content is not used to train AI models.
 
-### Private Mode
+## 4. Cookies
 
-The Chatbot supports a private mode. When it's enabled, your message text is replaced with `[private]` in our logs. We still record technical metadata (timestamps, token counts, model, latency), but the actual content of what you wrote is not stored.
+The widget sets two strictly necessary first-party cookies so a conversation can be resumed:
 
-## 4. Why We Collect It
+- `cw_conv_<agent>` --- conversation identifier
+- `cw_conv_session_<agent>` --- signed session token to retrieve the conversation history
 
-*Short version: To run the Chatbot, keep it secure, make it better, and meet legal requirements.*
+Both last approximately 24 hours, with `SameSite=Lax` and the `Secure` flag. No tracking, marketing, or third-party cookies are set.
 
-- **Running the service** --- receiving your messages, processing them through AI models, and sending back answers.
-- **Routing requests** --- managing the communication chain between the Chatbot interface and the underlying AI models.
-- **Improving the service** --- understanding usage patterns, spotting issues, and making the Chatbot more useful over time.
-- **Security** --- enforcing rate limits, preventing misuse, and monitoring for abuse.
-- **Legal compliance** --- meeting applicable legal or regulatory requirements.
+**Legal basis:** § 25(2) TDDDG (strictly necessary cookies).
 
-## 5. Legal Basis
+## 5. Retention
 
-*Short version: We rely mainly on legitimate interest (running a useful, secure service). In some cases, we may ask for your consent.*
+Conversation logs are automatically deleted after at most 12 months. If "private mode" is enabled, the content of visitor messages is not stored.
 
-Under the EU General Data Protection Regulation (GDPR), we process your data on these grounds:
+## 6. Web analytics (Umami)
 
-- **Legitimate interests (Art. 6(1)(f) GDPR)** --- operating and improving the Chatbot and keeping it secure, provided these interests don't override your data protection rights.
-- **Consent (Art. 6(1)(a) GDPR)** --- where we ask for your explicit permission for specific processing activities.
-- **Legal obligation (Art. 6(1)(c) GDPR)** --- where the law requires us to process certain data.
+To understand how this website is used and to improve its content, we use [Umami](https://umami.is), a privacy-friendly web analytics tool. Umami is self-hosted on our own infrastructure (`umi.byndsim.com`) on servers of Hetzner Online GmbH in Germany; usage data is not shared with third parties and there is no transfer to a third country.
 
-## 6. Who Sees Your Data
+**No cookies, no tracking across sites:** Umami does not set cookies and does not store any information on your device. It does not create a persistent identifier and does not track you across other websites.
 
-*Short version: Hetzner hosts our servers in Germany. Mistral AI generates the answers. Neither trains on your data.*
+**Data processed:** Umami collects aggregated, anonymized usage statistics such as the pages viewed, the referring website, and general information about your browser, operating system, device type, and country. Your IP address is used only transiently to derive this information and is not stored.
 
-Two third parties are involved in delivering the service:
+**Legal basis:** Art. 6(1)(f) GDPR (legitimate interest in analyzing and improving our website). Because Umami does not store or access information on your device, no consent under § 25(1) TDDDG is required.
 
-- **Hetzner Online GmbH** hosts our servers in Germany. They provide the infrastructure --- they don't access or process your chat content. All data (messages, logs, metadata) is stored on these servers.
-- **Mistral AI** is the large language model provider that generates the Chatbot's responses. Your messages are sent to Mistral's API for processing. According to Mistral's data processing terms, data sent via their API is not used for training. We encourage you to review [Mistral AI's privacy policy](https://mistral.ai/terms/#privacy-policy) for full details.
+## 7. Your data protection rights
 
-We do not share personal identifiers (name, email) with any third party through the Chatbot --- unless you happen to include such information in your messages yourself.
+Under the EU General Data Protection Regulation (GDPR), you have the following rights regarding your personal data:
 
-## 7. How Your Data Flows
+- **Right to access (Art. 15 GDPR)**
+- **Right to rectification (Art. 16 GDPR)**
+- **Right to erasure (Art. 17 GDPR)**
+- **Right to restrict processing (Art. 18 GDPR)**
+- **Right to data portability (Art. 20 GDPR)**
+- **Right to object (Art. 21 GDPR)**
 
-*Short version: Your message travels from your browser to our server in Germany, then to Mistral AI, and back. Everything is encrypted.*
+To exercise any of these rights, please contact us as the controller using the details in Section 1. You also have the right to lodge a complaint with a supervisory authority, in particular in the EU member state of your habitual residence, place of work, or the place of the alleged infringement.
 
-Here's the path your message takes:
+## 8. Changes to this Privacy Policy
 
-1.  You type a message in the Chatbot running in your browser.
-2.  It's sent over HTTPS to our backend server at Hetzner in Germany.
-3.  The server creates a pseudonymized user ID (SHA-256 hash of your IP) and logs the interaction to our database --- unless private mode is on.
-4.  Your message is forwarded to our Mistral adapter (also at Hetzner), which sends it to Mistral AI's cloud API.
-5.  Mistral's response travels back along the same path to your browser.
-
-Every link in this chain is encrypted with HTTPS/TLS.
-
-## 8. Storage, Security, and Retention
-
-*Short version: Data stays on our German server, protected by encryption and access controls. We delete it at the end of each semester.*
-
-**Where we store it** --- chat messages, responses, and metadata live in a PostgreSQL database on our Hetzner server in Germany. Session data (login state) exists only in server memory and is gone when the server restarts.
-
-**How we protect it** --- HTTPS encryption for all data in transit, Argon2-hashed passwords, restricted access to backend systems, and rate limiting to prevent abuse.
-
-**How long we keep it** --- we retain chat data and logs for the duration of the current academic semester. We may keep data longer if needed for troubleshooting, security, or legal reasons, but we periodically review and delete what's no longer necessary.
-
-## 9. Your Rights
-
-*Short version: You can access, correct, delete, or export your data. You can object to processing or withdraw consent. Contact us to exercise any of these.*
-
-Under the GDPR, you have the right to:
-
-- **Access** your data (Art. 15) --- find out what we have about you.
-- **Correct** inaccurate data (Art. 16) --- ask us to fix mistakes.
-- **Delete** your data (Art. 17) --- request erasure under certain conditions.
-- **Restrict** processing (Art. 18) --- limit how we use your data in certain situations.
-- **Export** your data (Art. 20) --- receive it in a portable format or have it transferred to another organization.
-- **Object** to processing (Art. 21) --- push back on processing based on legitimate interests.
-- **Withdraw consent** (Art. 7(3)) --- if we process based on consent, you can revoke it at any time without affecting past processing.
-- **Complain** to a supervisory authority --- in the EU member state where you live, work, or where the alleged infringement happened.
-
-To exercise any of these rights, contact us at the address in Section 2. We may need to verify your identity first, and we'll respond within one month.
-
-## 10. Changes to This Policy
-
-*Short version: If we change this policy, we'll update it here and change the date at the top.*
-
-We may update this Privacy Policy from time to time. Significant changes will be posted on this page with an updated date. We encourage you to check back occasionally.
+We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the new policy on this page and updating the date at the top. We encourage you to review this policy periodically.
