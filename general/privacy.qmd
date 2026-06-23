@@ -8,7 +8,10 @@ date: "2026-06-22"
 
 The controller responsible for data processing on this website is:
 
-Dr. Tobias Vlćek
+Dr. Tobias Vlćek\
+Am Eich 9d\
+22113 Oststeinbek\
+Germany
 
 Email: [tobias.vlcek@uni-hamburg.de](mailto:tobias.vlcek@uni-hamburg.de)
 

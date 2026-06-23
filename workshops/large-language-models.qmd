@@ -223,7 +223,7 @@ brew install --cask zed
 For Linux or Windows, download from [zed.dev](https://zed.dev).
 
 :::{.callout-tip}
-Zed offers a [free student tier]{.highlight} with unlimited edit predictions and **$10/month in API credits** for one year. Sign up at [zed.dev/education](https://zed.dev/education) with your GitHub account and university email.
+Zed offers a [free student tier]{.highlight} with unlimited edit predictions and monthly API credits. Sign up at [zed.dev/education](https://zed.dev/education) with your GitHub account and university email, and check that page for the current terms.
 :::
 
 ## GitHub Copilot

@@ -38,7 +38,7 @@ The Institute of Logistics, Transport and Production supervises three types of a
 | **Literature review** | Focused overview | Comprehensive | Exhaustive, with clear gap analysis |
 | **Own contribution** | Reproduce or extend an existing approach | Apply a method to a new problem or dataset | Develop or significantly extend a method |
 | **Computational study** | Small-scale | Expected | Required (thorough, with benchmarks) |
-| **Timeline** | 4 months | Depends | 6 months |
+| **Timeline** | 4 months | 9 weeks | 6 months |
 
 Table 1: Comparison of academic work types
 </div>

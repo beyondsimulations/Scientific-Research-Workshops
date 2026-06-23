@@ -55,7 +55,7 @@ Use journal rankings (e.g., VHB-JOURQUAL for business research) to assess source
 Knowledge of publications by your supervisor's research group on your topic is expected. Check their publication list before you begin.
 :::
 
-For a seminar paper, a focused review of 10--15 key sources is usually sufficient. A master thesis should cover 40--60 sources and demonstrate that you have read the field comprehensively. The [Literature Research](../workshops/literature-research.qmd) workshop covers how to find, evaluate, and organize your sources systematically.
+For a seminar paper, a focused review of 10--15 key sources is usually sufficient. A bachelor thesis typically draws on around 30 sources, and a master thesis should cover 40--60 sources and demonstrate that you have read the field comprehensively. The [Literature Research](../workshops/literature-research.qmd) workshop covers how to find, evaluate, and organize your sources systematically.
 
 
 ## Model
@@ -104,7 +104,7 @@ Label every axis with units. Use consistent colors across all figures: if Method
 
 ### Table design
 
-Use booktabs style: horizontal rules only (`\toprule`, `\midrule`, `\bottomrule`), no vertical lines. Right-align numeric columns, left-align text columns, and put units in column headers rather than repeating them in every cell. Keep tables compact by removing unnecessary columns. Every table needs a caption and must be referenced in the text.
+Use a clean, booktabs-style layout: horizontal rules only (one above the header, one below it, and one at the bottom), no vertical lines. Right-align numeric columns, left-align text columns, and put units in column headers rather than repeating them in every cell. Keep tables compact by removing unnecessary columns. Every table needs a caption and must be referenced in the text.
 
 
 ## Discussion
@@ -178,7 +178,7 @@ Using AI to generate an argument, write a literature review section, or produce 
 
 Someone who has spent years in a field can read AI output and immediately spot what is wrong, what is oversimplified, and what is subtly off. They have the disciplinary judgment to tell useful output from plausible nonsense.
 
-You are still building that judgment. That is not a failing on your part; acquiring it is the whole point of writing a thesis. But it means that AI output is riskier for you than for someone with two decades of experience. The output looks polished and confident, which makes it harder to question than a rough draft from a classmate. Studies on how students use AI tools consistently find that students tend to trust AI output even when they notice errors, because it sounds authoritative and arrives instantly. This tendency, sometimes called automation bias, is worth knowing about so you can watch for it in yourself.
+You are still building that judgment. That is not a failing on your part; acquiring it is the whole point of writing a thesis. But it means that AI output is riskier for you than for someone with two decades of experience. The output looks polished and confident, which makes it harder to question than a rough draft from a classmate. There is a well-documented tendency — sometimes called automation bias — to over-trust automated output even when we notice errors, because it sounds authoritative and arrives instantly. It is worth knowing about so you can watch for it in yourself.
 
 ### Writing fast is not the same as understanding
 

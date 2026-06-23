@@ -26,13 +26,13 @@ These tools let you run open-source models on your own machine. Running locally 
 
 - [Ollama](https://ollama.com/): Free and open-source tool to run large language models locally. Supports a wide range of models including Llama, Mistral, and Gemma. Smaller models (under 8B parameters) can often run on a CPU with enough RAM, though responses will be slower than hosted alternatives.
 - [Hugging Face](https://huggingface.co/): The largest open repository of AI models, datasets, and community fine-tunes. You can browse models by task (text generation, translation, summarization), download them, and run them locally through Ollama or the Hugging Face Transformers library.
-- [LM Studio](https://lmstudio.ai/): A desktop application for discovering, downloading, and running LLMs locally. Offers both a chat UI and an OpenAI-compatible local server, which means tools that work with the OpenAI API can connect to your local model instead. *Better than Ollama for most users.*
+- [LM Studio](https://lmstudio.ai/): A desktop application for discovering, downloading, and running LLMs locally. Offers both a chat UI and an OpenAI-compatible local server, which means tools that work with the OpenAI API can connect to your local model instead. *More beginner-friendly than Ollama for most users.*
 
 # AI Coding Tools
 
 These are the tools covered in the [Working with AI](../workshops/large-language-models.qmd) workshop. They range from full editors with built-in AI to terminal-based agents that can work autonomously.
 
-- [Zed](https://zed.dev/): A modern, fast code editor built in Rust with built-in AI assistant support. Recommended for this course. Offers a [free student tier](https://zed.dev/education) with unlimited edit predictions and $10/month in API credits for one year when you sign up with a GitHub account and university email.
+- [Zed](https://zed.dev/): A modern, fast code editor built in Rust with built-in AI assistant support. Recommended for this course. Offers a [free student tier](https://zed.dev/education) with unlimited edit predictions and monthly API credits when you sign up with a GitHub account and university email; see the linked page for current terms.
 - [GitHub Copilot](https://github.com/features/copilot): AI pair programmer that provides inline code suggestions as you type. Integrates into VS Code, Zed, and JetBrains. Free for students via the [GitHub Student Developer Pack](https://education.github.com/pack).
 - [OpenCode](https://opencode.ai): Open-source terminal-based AI coding assistant. Lightweight and fast, supports multiple AI providers with your own API keys. Good for quick file edits and terminal tasks.
 - [Claude Code](https://claude.ai/code): Anthropic's CLI coding agent for autonomous multi-step tasks. Reads your entire codebase for context, runs terminal commands, and iterates on errors. Requires a Claude subscription or Anthropic API key.

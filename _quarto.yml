@@ -61,7 +61,7 @@ website:
         href: general/faq.qmd
 
   page-footer:
-    center: "Scientific Research Workshops, Tobias Vlćek & Knut Haase</br>CC BY-SA 4.0"
+    center: "Scientific Research Workshops, Prof. Dr. Knut Haase & Dr. Tobias Vlćek</br>CC BY-SA 4.0"
     left:
       - icon: github
         href: https://github.com/beyondsimulations/Scientific-Research-Workshops

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-A Quarto website for university seminar preparation materials (University of Hamburg). Authored by Dr. Tobias Vlćek. The site hosts five workshops and curated literature/resources for Bachelor and Master students in operations research.
+A Quarto website for university seminar preparation materials (University of Hamburg). Authored by Prof. Dr. Knut Haase and Dr. Tobias Vlćek. The site hosts five workshops and curated literature/resources for Bachelor and Master students in operations research.
 
 ## Build Commands
 
@@ -20,8 +20,8 @@ Quarto website project (`project: type: website` in `_quarto.yml`).
 - `_quarto.yml` — central config: site metadata, sidebar navigation, format options, freeze settings
 - `_brand.yml` — brand color palette and typography (Gelasio headings, Reddit Sans body, Google Sans Code monospace)
 - `styles.scss` — custom theme built on `_brand.yml` variables; defines CSS utility classes (`.highlight`, `.task`, `.question`, `.flow`, `.errors`, `.light`)
-- `index.qmd` — landing page with workshop overview table
-- `workshops/` — workshop pages (html output, each with a renamed `output-file`):
+- `index.qmd` — landing page with an About section and a bulleted Topics list
+- `workshops/` — workshop pages (html output):
   - `large-language-models.qmd` — AI programming, LLM fundamentals, models/apps/harnesses framework, coding tools
   - `prompting.qmd` — RBTF prompting framework for researchers
   - `quarto-academic-writing.qmd` — Quarto for academic papers, citations, cross-references
@@ -32,13 +32,13 @@ Quarto website project (`project: type: website` in `_quarto.yml`).
   - `seminar-paper-en.qmd` — English Typst/PDF template
   - `seminar-paper-de.qmd` — German Typst/PDF template
   - `references.bib` — sample bibliography
-- `general/` — shared resources: `scientific-writing.qmd` (writing guide), `templates.qmd` (thesis templates and criteria), `literature.qmd` (curated reading list), `privacy.qmd` (chatbot privacy policy), `header.html` (analytics)
+- `general/` — shared resources: `scientific-writing.qmd` (writing guide), `templates.qmd` (thesis templates and criteria), `literature.qmd` (curated reading list), `faq.qmd` (student FAQs), `privacy.qmd` (chatbot privacy policy), `imprint.qmd` (legal notice), `header.html` (analytics)
 - `_site/` — rendered output (gitignored)
 
 ## Content Conventions
 
-- Pages must be listed in both `_quarto.yml` `project.render` and `website.sidebar.contents`
-- Workshop pages use html format with a renamed `output-file` in their YAML front matter
+- Pages must be listed in `_quarto.yml` `project.render`, and in `website.sidebar.contents` for sidebar navigation. The legal pages (`privacy.qmd`, `imprint.qmd`) are intentionally footer-only: they appear in `project.render` and `page-footer` but not in the sidebar.
+- Workshop pages use html format
 - Styling conventions:
   - Section titles: `# [Title]{.flow}`
   - Emphasis: `[text]{.highlight}`, `[Question]{.question}`, `[Task]{.task}`

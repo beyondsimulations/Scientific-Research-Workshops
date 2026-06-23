@@ -30,4 +30,4 @@ A curated list of tools, LLMs, databases, and further reading is on the [Resourc
 
 # Questions
 
-If you have questions, contact me at [tobias.vlcek@uni-hamburg.de](mailto:tobias.vlcek@uni-hamburg.de?subject=Seminar%20Preparation%3A%20%3CYour%20subject%3E).
+If you have questions, contact us at [tobias.vlcek@uni-hamburg.de](mailto:tobias.vlcek@uni-hamburg.de?subject=Seminar%20Preparation%3A%20%3CYour%20subject%3E).

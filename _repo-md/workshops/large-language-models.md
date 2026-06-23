@@ -216,7 +216,7 @@ For Linux or Windows, download from [zed.dev](https://zed.dev).
 
 > **Tip**
 >
-> Zed offers a <span class="highlight">free student tier</span> with unlimited edit predictions and **\$10/month in API credits** for one year. Sign up at [zed.dev/education](https://zed.dev/education) with your GitHub account and university email.
+> Zed offers a <span class="highlight">free student tier</span> with unlimited edit predictions and monthly API credits. Sign up at [zed.dev/education](https://zed.dev/education) with your GitHub account and university email, and check that page for the current terms.
 
 ## GitHub Copilot
 

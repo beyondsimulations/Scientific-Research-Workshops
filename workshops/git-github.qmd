@@ -111,7 +111,7 @@ Think of it like writing an email: you draft the text (working directory), you r
 
 You can interact with Git in two ways. **Zed's Git panel** lets you click to stage, commit, and view diffs visually, which is enough for most daily work. **Terminal commands** give you full control over every operation and work in any environment, not just Zed. We will teach both: start with Zed's visual tools for comfort, then learn the terminal commands so you understand what is happening underneath.
 
-Zed has [built-in Git support]{.highlight}: the **source control panel** shows all changed files at a glance, you can **check the box** next to a file to stage it, **type a commit message** and commit without leaving the editor, and the **diff view** shows exactly which lines changed inline. Colored **gutter markers** in the margin indicate added, modified, and deleted lines.
+Zed has [built-in Git support]{.highlight}: the **Git panel** shows all changed files at a glance, you can **check the box** next to a file to stage it, **type a commit message** and commit without leaving the editor, and the **diff view** shows exactly which lines changed inline. Colored **gutter markers** in the margin indicate added, modified, and deleted lines.
 
 :::{.callout-tip}
 For daily work, Zed's Git panel is all you need. The terminal commands in the following sections show you what is happening behind the scenes and become useful when you need more control or when something goes wrong.
@@ -189,7 +189,7 @@ git commit -m "Add project description to README"
 Write messages that describe [what changed and why]{.highlight}. Six months from now, "update" tells you nothing. "Fix broken cross-reference in chapter 3" tells you everything.
 :::
 
-To see all your commits in a compact view, run `git log --oneline`. Each line shows a short identifier (the commit hash) and your message, forming the timeline of your project. To see your unstaged changes (what you have edited but not yet run `git add` on), run `git diff`. Zed's source control panel shows diffs visually, so you can see exactly which lines were added, changed, or removed without memorizing the command.
+To see all your commits in a compact view, run `git log --oneline`. Each line shows a short identifier (the commit hash) and your message, forming the timeline of your project. To see your unstaged changes (what you have edited but not yet run `git add` on), run `git diff`. Zed's Git panel shows diffs visually, so you can see exactly which lines were added, changed, or removed without memorizing the command.
 
 ## Ignoring files you do not need
 
@@ -239,7 +239,7 @@ After the initial setup, the day-to-day cycle is simple. Both approaches (Zed's 
 **In Zed's Git panel:**
 
 1. Edit your files
-2. Open the source control panel
+2. Open the Git panel
 3. Check the boxes to stage changes
 4. Type a commit message and commit
 5. Push to GitHub
@@ -257,6 +257,8 @@ After the initial setup, the day-to-day cycle is simple. Both approaches (Zed's 
 :::{.callout-important}
 Commit and push at the end of every work session. This is your backup. If anything happens to your machine, your work is safe on GitHub.
 :::
+
+If you work on more than one machine — say a university computer and your own laptop — run `git pull` at the start of each session to download the latest commits from GitHub before you start editing. This keeps your local copy in sync and avoids conflicts. If you only ever edit the project on a single machine, you will rarely need it.
 
 # [Branching]{.flow}
 
