@@ -80,6 +80,7 @@ format:
           top: if y == 0 { 0.08em } else if y == 1 { 0.05em },
         ))
         #show table: it => block(width: auto, stroke: (bottom: 0.08em), it)
+        #set bibliography(title: "References")
         #show bibliography: it => {
           pagebreak()
           it
@@ -269,7 +270,7 @@ The modeling of the problem requires several simplifying assumptions:
      - Put units in column headers, not in every cell.
      - Keep tables compact — avoid unnecessary columns. -->
 
-We define the following notation:
+We define the following notation. Sets use calligraphic symbols such as $\mathcal{J}$. Variables use uppercase letters ($X_j$, $j \in \mathcal{J}$), while parameters and indices use lowercase letters ($b_i$).
 
 | Symbol | Description |
 |:------:|:------------|
