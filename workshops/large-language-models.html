@@ -125,7 +125,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshops/large-language-models.html">AI Tools</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshops/large-language-models.html">Working with AI</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -169,25 +169,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../workshops/literature-research.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Literature</span></a>
+ <span class="menu-text">Literature Research</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../workshops/large-language-models.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">AI Tools</span></a>
+ <span class="menu-text">Working with AI</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../workshops/prompting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Prompting</span></a>
+ <span class="menu-text">AI Prompting</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../workshops/git-github.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Version Control</span></a>
+ <span class="menu-text">Git &amp; GitHub</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -412,7 +412,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-body-container">
-<p>A <a href="https://www.anthropic.com/research/AI-assistance-coding-skills">2025 Anthropic study</a> found that developers using AI scored 17% lower on comprehension tests (roughly two letter grades), with the biggest gap in debugging. Leaning on AI for code generation without engaging with what it produces erodes the skills you need to catch its mistakes.</p>
+<p>A <a href="https://www.anthropic.com/research/AI-assistance-coding-skills">2025 Anthropic study</a> found that developers using AI scored 17 percentage points lower on comprehension tests (roughly two letter grades), with the biggest gap in debugging. Leaning on AI for code generation without engaging with what it produces erodes the skills you need to catch its mistakes.</p>
 </div>
 </div>
 </div>
@@ -538,7 +538,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 </div>
-<p>All four offer free access to capable models, while paid tiers unlock stronger models and higher usage limits. Mistral also offers an <span class="highlight">affordable student tier</span> that includes Mistral Vibe, its terminal-based coding agent (covered below).</p>
+<p>All four offer free access to capable models, while paid tiers give you stronger models and higher usage limits. Mistral also offers an <span class="highlight">affordable student tier</span> that includes Mistral Vibe, its terminal-based coding agent (covered below).</p>
 <p>Every app also comes with a <span class="highlight">harness</span>, a system that gives the model <strong>tools and capabilities</strong>. Same model, different harness = <strong>completely different results</strong>.</p>
 <p><strong>Different apps, different harnesses:</strong></p>
 <ul>
@@ -645,7 +645,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="terminal-based-ai-tools" class="level2">
 <h2 class="anchored" data-anchor-id="terminal-based-ai-tools">Terminal-based AI tools</h2>
-<p>Terminal-based coding assistants let you work with AI <span class="highlight">directly from the command line</span>, without leaving your editor or browser. Several options stand out:</p>
+<p>Terminal-based coding assistants let you work with AI <span class="highlight">directly from the command line</span>, without leaving your editor or browser. Three are worth knowing:</p>
 <p><strong>OpenCode</strong></p>
 <ul>
 <li><span class="highlight">Open-source</span> terminal-based AI coding assistant</li>
@@ -656,12 +656,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>For other platforms, see <a href="https://opencode.ai">opencode.ai</a>.</p>
 <p><strong>Claude Code</strong></p>
 <ul>
-<li>Anthropic’s <span class="highlight">CLI coding agent</span> that goes beyond suggestions: <strong>autonomous multi-step task execution</strong></li>
+<li>Anthropic’s <span class="highlight">CLI coding agent</span>. Unlike autocomplete, it executes <strong>multi-step tasks</strong> on its own</li>
 <li>Reads your entire codebase for context and can <strong>plan, write, test, and debug</strong> code autonomously</li>
 <li>Executes terminal commands and iterates on errors, best for <span class="highlight">involved, multi-step tasks</span></li>
 </ul>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install <span class="at">--cask</span> claude-code</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>For other platforms, see <a href="https://claude.ai/code">claude.ai/code</a>.</p>
+<p>For other platforms, see <a href="https://claude.com/claude-code">claude.com/claude-code</a>.</p>
 <p><strong>Mistral Vibe</strong></p>
 <ul>
 <li>Mistral’s <span class="highlight">open-source CLI coding agent</span>, from the European provider</li>
@@ -721,7 +721,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td><strong>Claude Code</strong></td>
 <td>Terminal agent</td>
 <td>Multi-step tasks</td>
-<td>API costs</td>
+<td>Subscription or API costs</td>
 </tr>
 <tr class="odd">
 <td><strong>Mistral Vibe</strong></td>
@@ -804,7 +804,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><a href="https://www.anthropic.com/research">Anthropic Research</a>: AI safety and interpretability</li>
 <li><a href="https://www.oneusefulthing.org/">One Useful Thing</a>: Ethan Mollick’s blog on practical AI use</li>
 <li><a href="https://www.promptingguide.ai/">Prompt Engineering Guide</a>: Techniques for better prompts</li>
-<li><a href="https://www.anthropic.com/research/AI-assistance-coding-skills">AI Assistance and Coding Skills</a>: Anthropic’s study on how AI help affects learning (the 17% finding cited in this workshop)</li>
+<li><a href="https://www.anthropic.com/research/AI-assistance-coding-skills">AI Assistance and Coding Skills</a>: Anthropic’s study on how AI help affects learning (the comprehension finding cited in this workshop)</li>
 <li><a href="https://www.understandingai.org/p/the-many-masks-that-llms-wear">The Many Masks LLMs Wear</a>: Kai Williams on persona drift and why models behave unpredictably</li>
 <li><a href="https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents">Effective Harnesses for Long-Running Agents</a>: Practical patterns for building agent systems that actually work</li>
 </ul>

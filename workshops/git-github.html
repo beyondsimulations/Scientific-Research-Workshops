@@ -125,7 +125,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshops/git-github.html">Version Control</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../workshops/git-github.html">Git &amp; GitHub</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -169,25 +169,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../workshops/literature-research.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Literature</span></a>
+ <span class="menu-text">Literature Research</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../workshops/large-language-models.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">AI Tools</span></a>
+ <span class="menu-text">Working with AI</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../workshops/prompting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Prompting</span></a>
+ <span class="menu-text">AI Prompting</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../workshops/git-github.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Version Control</span></a>
+ <span class="menu-text">Git &amp; GitHub</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -401,7 +401,7 @@ essay_final_REALLY_FINAL_revised.docx</code></pre>
 <h1><span class="flow">Setting Up Git</span></h1>
 <section id="installing-and-configuring-git" class="level2">
 <h2 class="anchored" data-anchor-id="installing-and-configuring-git">Installing and configuring Git</h2>
-<p><strong>macOS</strong> (via Homebrew, which you installed in the earlier workshop):</p>
+<p><strong>macOS</strong> (via Homebrew, which you installed in the <a href="../workshops/large-language-models.html">Working with AI</a> workshop):</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Windows:</strong></p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">winget</span> install Git.Git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -434,7 +434,7 @@ essay_final_REALLY_FINAL_revised.docx</code></pre>
 <li><strong>Staging area:</strong> changes you have selected for the next snapshot</li>
 <li><strong>Repository:</strong> permanent saved snapshots (commits)</li>
 </ol>
-<p>Think of it like writing an email: you draft the text (working directory), you review what to include (staging), you hit send (commit). The command <code>git add</code> moves changes to staging, and <code>git commit</code> saves the snapshot. This two-step process lets you choose exactly what goes into each commit.</p>
+<p>Think of it like writing an email: you draft the text (working directory), you choose what to include (staging), and you save it to your outbox (commit). Actually sending it — putting it on GitHub — happens later with <code>git push</code>. The command <code>git add</code> moves changes to staging, and <code>git commit</code> saves the snapshot. This two-step process lets you choose exactly what goes into each commit.</p>
 <p>You can interact with Git in two ways. <strong>Zed’s Git panel</strong> lets you click to stage, commit, and view diffs visually, which is enough for most daily work. <strong>Terminal commands</strong> give you full control over every operation and work in any environment, not just Zed. We will teach both: start with Zed’s visual tools for comfort, then learn the terminal commands so you understand what is happening underneath.</p>
 <p>Zed has <span class="highlight">built-in Git support</span>: the <strong>Git panel</strong> shows all changed files at a glance, you can <strong>check the box</strong> next to a file to stage it, <strong>type a commit message</strong> and commit without leaving the editor, and the <strong>diff view</strong> shows exactly which lines changed inline. Colored <strong>gutter markers</strong> in the margin indicate added, modified, and deleted lines.</p>
 <div class="callout callout-style-simple callout-tip">
@@ -520,8 +520,9 @@ essay_final_REALLY_FINAL_revised.docx</code></pre>
 <pre><code>_site/
 _freeze/
 .DS_Store
-*.pdf</code></pre>
-<p>For a Quarto project, this means you track your <code>.qmd</code> source files but not the rendered output. The output can always be regenerated.</p>
+*.pdf
+!images/*.pdf</code></pre>
+<p>For a Quarto project, this means you track your <code>.qmd</code> source files but not the rendered output. The output can always be regenerated. The <code>!images/*.pdf</code> line makes an exception: figure PDFs in your <code>images/</code> folder are inputs, not output, so they stay tracked.</p>
 <div class="callout callout-style-simple callout-note">
 <div class="callout-body d-flex">
 <div class="callout-icon-container">
@@ -538,7 +539,7 @@ _freeze/
 <h1><span class="flow">Connecting to GitHub</span></h1>
 <section id="setting-up-github" class="level2">
 <h2 class="anchored" data-anchor-id="setting-up-github">Setting up GitHub</h2>
-<p>Go to <a href="https://github.com">github.com</a> and sign up with your university email. Apply for the <a href="https://education.github.com/pack">GitHub Student Developer Pack</a> for extra features. If you already set up GitHub for Copilot in the earlier workshop, you are ready to go.</p>
+<p>Go to <a href="https://github.com">github.com</a> and sign up with your university email. Apply for the <a href="https://education.github.com/pack">GitHub Student Developer Pack</a> for extra features. If you already set up GitHub for Copilot in the <a href="../workshops/large-language-models.html">Working with AI</a> workshop, you are ready to go.</p>
 <p>To create your first remote repository, click the <strong>+</strong> icon in the top-right corner and select <strong>“New repository”</strong>. Name it <code>my-project</code> (matching your local folder), leave it <strong>public</strong> (or private if you prefer), and <strong>do not</strong> initialize with a README since you already have one locally. Click <strong>“Create repository”</strong> and GitHub will show you setup instructions.</p>
 </section>
 <section id="pushing-to-github" class="level2">
@@ -695,7 +696,7 @@ Table&nbsp;1: Version control decisions
 <tbody>
 <tr class="odd">
 <td style="text-align: left;"><code>.qmd</code> source files</td>
-<td style="text-align: left;">Generated PDFs (<code>_site/</code>, <code>*.pdf</code>)</td>
+<td style="text-align: left;">Rendered output (<code>_site/</code>, the paper PDF)</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><code>.bib</code> bibliography</td>
@@ -722,8 +723,10 @@ Table&nbsp;1: Version control decisions
 <pre><code>_site/
 _freeze/
 *.pdf
+!images/*.pdf
 .DS_Store
 .quarto/</code></pre>
+<p>Note the <code>!images/*.pdf</code> exception: without it, <code>*.pdf</code> would also ignore your figure PDFs in <code>images/</code>, and anyone cloning your repository could not render the paper.</p>
 </section>
 </section>
 <section id="wrap-up" class="level1">
