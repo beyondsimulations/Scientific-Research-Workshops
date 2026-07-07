@@ -343,8 +343,8 @@ Use [Zotero](https://www.zotero.org/) (free) to manage your references. Export y
 
 ## Writing best practices
 
-- **Keep figures in an `images/` folder.** A dedicated folder prevents clutter in your project root and makes it straightforward to locate and update graphics later.
-- **Use `quarto preview` for <span class="highlight">live preview</span> while writing.** Seeing your rendered output update in real time helps you catch formatting issues early, before they pile up.
+- **Keep figures in an `images/` folder.** It keeps your project root uncluttered and graphics easy to find.
+- **Use `quarto preview` for <span class="highlight">live preview</span> while writing.** Seeing the rendered output update as you type helps you catch formatting issues early.
 - **Write one sentence per line.** This makes version control diffs much cleaner, because a change to one sentence shows up as a single changed line rather than a reflow of an entire paragraph.
 - **Use `<!-- comments -->` to leave notes for yourself.** HTML comments are invisible in the rendered output, so you can mark sections that need revision or leave reminders without affecting the final document.
 

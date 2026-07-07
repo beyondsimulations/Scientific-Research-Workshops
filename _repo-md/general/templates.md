@@ -11,7 +11,10 @@ code-links:
   - text: Template (German)
     icon: file-earmark-text
     href: ../templates/seminar-paper-de.qmd
-  - text: Template (LaTeX)
+  - text: Template (LaTeX, English)
+    icon: file-earmark-code
+    href: ../templates/Template.tex
+  - text: Template (LaTeX, German)
     icon: file-earmark-code
     href: ../templates/Vorlage.tex
   - text: Bibliography
@@ -43,7 +46,7 @@ The Institute of Logistics, Transport and Production supervises three types of a
 Table 1: Comparison of academic work types
 </div>
 
-Page counts include images, tables, and references, but exclude the title page, table of contents, and the lists of abbreviations and symbols. These are general guidelines. Your supervisor may set different expectations, so clarify the scope early.
+Page counts include images, tables, and references, but exclude the title page, table of contents, and the lists of abbreviations and symbols. The timeline is the official working period from registration to submission set by the examination regulations, which is why a seminar paper (spanning the semester) has a longer window than a bachelor thesis. These are general guidelines. Your supervisor may set different expectations, so clarify the scope early.
 
 # Evaluation Criteria
 
@@ -81,7 +84,7 @@ Revisit your research question regularly. Many students lose sight of it mid-way
 
 # Choosing a Template
 
-We provide ready-to-use templates for seminar papers, bachelor theses, and master theses. The recommended option is Quarto with Typst, which produces professional PDFs without a LaTeX installation. A traditional LaTeX template is also available.
+We provide ready-to-use templates for seminar papers, bachelor theses, and master theses. The recommended option is Quarto with Typst, which produces clean PDFs without a LaTeX installation. Traditional LaTeX templates are also available, in both languages.
 
 <div id="tbl-templates">
 
@@ -89,6 +92,7 @@ We provide ready-to-use templates for seminar papers, bachelor theses, and maste
 |------------------|------------------|---------------|-----------------------|
 | `seminar-paper-en.qmd` | English | Quarto/Typst | [Quarto](https://quarto.org/docs/get-started/) installed |
 | `seminar-paper-de.qmd` | German | Quarto/Typst | [Quarto](https://quarto.org/docs/get-started/) installed |
+| `Template.tex` | English | LaTeX | LaTeX distribution + Biber |
 | `Vorlage.tex` | German | LaTeX | LaTeX distribution + Biber |
 
 Table 3: Available templates
@@ -162,13 +166,13 @@ quarto preview seminar-paper-en.qmd
 
 # Setting Up the LaTeX Template
 
-For the LaTeX template, download `Vorlage.tex` together with `references.bib`, and create an `images/` subfolder for the example figure:
+For the LaTeX path, pick **one** language version (`Template.tex` in English or `Vorlage.tex` in German). Download it together with `references.bib`, and create an `images/` subfolder for the example figure:
 
 <div id="tbl-files-latex">
 
 | File | Location | Purpose |
 |------------------|-----------------------------|--------------------------|
-| `Vorlage.tex` | project folder | Your paper (edit this) |
+| `Template.tex` *or* `Vorlage.tex` | project folder | Your paper (edit this) --- download only the language you need |
 | `references.bib` | project folder | Your bibliography entries |
 | `Image.pdf` | `images/` subfolder | Example figure referenced by the template |
 
@@ -179,20 +183,20 @@ Table 5: Required files for LaTeX
 >
 > As with the Quarto templates, you must create an `images/` subfolder yourself and place `Image.pdf` inside it. The template references `images/Image.pdf`, so compilation will fail until both the folder and the file are in place. The Quarto `typst-show.typ` helper is **not** needed for the LaTeX path.
 
-Compile with the standard LaTeX toolchain:
+Compile with the standard LaTeX toolchain (replace `Template` with `Vorlage` for the German version):
 
 ``` bash
-pdflatex Vorlage.tex
-biber Vorlage
-pdflatex Vorlage.tex
-pdflatex Vorlage.tex
+pdflatex Template.tex
+biber Template
+pdflatex Template.tex
+pdflatex Template.tex
 ```
 
 Look for `#############` markers in the file to find the fields you need to change (name, title, matriculation number, etc.).
 
 # AI Tools Declaration
 
-Both templates include a required section for documenting your use of AI tools. Fill it in honestly and specifically. For each tool, describe which tool you used, for which tasks, and how you verified the output.
+All templates include a required section for documenting your use of AI tools. Fill it in honestly and specifically. For each tool, describe which tool you used, for which tasks, and how you verified the output.
 
 > **Important**
 >

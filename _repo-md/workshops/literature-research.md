@@ -11,7 +11,7 @@ author:
 
 ## Welcome
 
-This workshop covers <span class="highlight">structured literature research</span>, a core skill for any Bachelor or Master thesis. You will learn how to formulate a clear research question, build effective search strategies, use AI tools for discovery, organize references with Zotero, and evaluate sources critically.
+This workshop covers <span class="highlight">structured literature research</span>, a core skill for any bachelor or master thesis. You will learn how to formulate a clear research question, build effective search strategies, use AI tools for discovery, organize references with Zotero, and evaluate sources critically.
 
 > **Tip**
 >
@@ -124,7 +124,7 @@ Use <span class="highlight">Boolean operators</span> to combine search terms:
 
 > **Note**
 >
-> Operator support varies by database. Google Scholar does not recognize a spelled-out `NOT` --- put a minus sign directly before the term instead (`-continuous`) --- and its `*` works as a whole-word placeholder inside a phrase rather than matching word stems. Truncation wildcards like `optimi*` work in Scopus and Web of Science.
+> Operator support varies by database. Google Scholar does not recognize a spelled-out `NOT` --- put a minus sign directly before the term instead (`-continuous`) --- and it does not support truncation wildcards at all. Wildcards like `optimi*` work in Scopus and Web of Science.
 
 A complete search string for our example:
 
@@ -164,7 +164,7 @@ Snowballing is <span class="highlight">how you find papers that keyword search m
 
 ## AI discovery tools
 
-Several tools now use AI to <span class="highlight">help you find papers faster</span>. They complement traditional database searches --- they are good at surfacing papers you would not discover through keyword search alone, at showing how papers relate to each other, and at giving you a quick overview of a research field.
+Several tools now use AI to <span class="highlight">help you find papers faster</span>. They complement traditional database searches: they surface papers that keyword search misses, show how papers relate to each other, and give you a quick overview of a research field.
 
 | Tool | What It Does |
 |----------------------|--------------------------------------------------|
@@ -198,7 +198,7 @@ You will read <span class="highlight">dozens to hundreds of papers</span>. Witho
 
 ## Zotero and the workflow
 
-[Zotero](https://www.zotero.org/) is free, open-source, and works on Windows, Mac, and Linux. It comes with a **browser connector** for saving papers with one click, **PDF storage** for attaching and annotating papers directly, **collections** and **tags** for organizing your library, **groups** for collaborative projects, and **sync** for accessing everything from any device.
+[Zotero](https://www.zotero.org/) is free, open-source, and works on Windows, Mac, and Linux. The browser connector saves a paper in one click, you can annotate PDFs inside Zotero, collections and tags keep your library organized, and everything syncs across devices. Shared group libraries are available for collaborative projects.
 
 > **Important**
 >
@@ -242,7 +242,13 @@ Not all sources <span class="highlight">carry the same weight</span>:
 >
 > Prefer peer-reviewed journal articles and reputable conference proceedings. Use preprints and working papers with caution.
 
-When evaluating a paper, consider: **journal reputation** (is it recognized in the field?), **author credentials** (are they established researchers?), **methodology** (is the approach rigorous and well-described?), **recency** (has it been superseded?), and **citation count** (has it been cited by others, and how often?).
+When evaluating a paper, ask:
+
+- Is the journal recognized in the field?
+- Are the authors established researchers?
+- Is the methodology rigorous and well described?
+- Has the paper been superseded by newer work?
+- How often has it been cited, and by whom?
 
 > **Note**
 >
@@ -256,11 +262,11 @@ Annotate as you read. In Zotero, you can highlight and comment directly on PDFs.
 
 ## Reading critically
 
-Do not accept results at face value. Ask yourself whether the <span class="highlight">sample size</span> is sufficient, whether the **assumptions** are reasonable, whether the **conclusions** follow from the results, whether the findings can be **generalized** to other contexts, and whether there are **limitations** the authors do not discuss.
+Do not accept results at face value. Is the <span class="highlight">sample size</span> sufficient? Are the assumptions reasonable? Do the conclusions actually follow from the results? Would the findings hold in other contexts? And what limitations do the authors leave undiscussed?
 
 > **Tip**
 >
-> A good literature review is not about reading everything. It is about finding and connecting the right papers. For guidance on how to write the review itself, see the [Scientific Writing](../general/scientific-writing.qmd) guide.
+> You do not need to read everything. A good literature review finds and connects the right papers. For guidance on how to write the review itself, see the [Scientific Writing](../general/scientific-writing.qmd) guide.
 
 # <span class="flow">Wrap-up</span>
 

@@ -32,7 +32,7 @@ The research question determines everything: structure, method, and how your wor
 
 Analytical questions work better than purely descriptive ones. "What methods exist for solving the VRP?" is descriptive and barely requires original thought. "How does the proposed heuristic compare to exact methods in terms of solution quality and runtime?" is analytical and gives you something concrete to answer.
 
-Be precise. A common mistake is choosing a question that is too ambitious for the available time. If you cannot answer it within your timeline, narrow the scope. And keep the question visible as you write. Every section should connect back to it. I see many students who lose sight of their question halfway through and end up answering something else entirely by the conclusion.
+Be precise. A common mistake is choosing a question that is too ambitious for the available time. If you cannot answer it within your timeline, narrow the scope. And keep the question visible as you write. Every section should connect back to it. We see many students who lose sight of their question halfway through and end up answering something else entirely by the conclusion.
 
 :::{.callout-tip}
 Write the introduction last, once you actually know your contribution.
@@ -143,7 +143,7 @@ A paragraph covering multiple unrelated ideas should be split. A paragraph consi
 
 ## Proofreading
 
-Read your paper aloud before submission. Listen for awkward phrasing, overly long sentences, and words that can be removed without changing the meaning. If a sentence runs longer than three lines, split it. In my experience, clear writing usually means the author actually understands the material. Muddled writing usually means they don't.
+Read your paper aloud before submission. Listen for awkward phrasing, overly long sentences, and words that can be removed without changing the meaning. If a sentence runs longer than three lines, split it. In our experience, clear writing usually means the author actually understands the material. Muddled writing usually means they don't.
 
 
 # Plagiarism, Ethics, and AI
@@ -156,7 +156,7 @@ Direct quotes must be in quotation marks with an exact citation, including the p
 
 ## Research ethics
 
-Plagiarism is not the only integrity issue. Inventing data or results is wrong, it does not matter how plausible the fabricated numbers look. Negative results are a legitimate scientific contribution; making up positive ones is not. Selective reporting is wrong as well: presenting only the runs where your method worked well, while quietly dropping the ones where it didn't. The same goes for cherry-picking metrics, instances, or parameter settings that make your approach look better than it is. If you tried 20 configurations and only report the best one, say so explicitly.
+Plagiarism is not the only integrity issue. Inventing data or results is wrong, no matter how plausible the fabricated numbers look. Negative results are a legitimate scientific contribution; making up positive ones is not. Selective reporting is wrong as well: presenting only the runs where your method worked well, while quietly dropping the ones where it didn't. The same goes for cherry-picking metrics, instances, or parameter settings that make your approach look better than it is. If you tried 20 configurations and only report the best one, say so explicitly.
 
 Citing a paper for a claim it doesn't actually make, or citing it without having read it, is also misconduct. Supervisors and examiners who know the field will usually notice. If your method doesn't outperform the baseline, that is a valid finding. Write it up honestly and discuss why.
 
@@ -178,11 +178,11 @@ Using AI to generate an argument, write a literature review section, or produce 
 
 Someone who has spent years in a field can read AI output and immediately spot what is wrong, what is oversimplified, and what is subtly off. They have the disciplinary judgment to tell useful output from plausible nonsense.
 
-You are still building that judgment. That is not a failing on your part; acquiring it is the whole point of writing a thesis. But it means that AI output is riskier for you than for someone with two decades of experience. The output looks polished and confident, which makes it harder to question than a rough draft from a classmate. There is a well-documented tendency — sometimes called automation bias — to over-trust automated output even when we notice errors, because it sounds authoritative and arrives instantly. It is worth knowing about so you can watch for it in yourself.
+You are still building that judgment. That is not a failing on your part; acquiring it is the whole point of writing a thesis. But it means that AI output is riskier for you than for someone with two decades of experience. The output looks polished and confident, which makes it harder to question than a rough draft from a classmate. This tendency to over-trust automated output even when we notice errors has a name: automation bias. AI output sounds authoritative and arrives instantly, which makes it easy to fall for. It is worth knowing about so you can watch for it in yourself.
 
 ### Writing fast is not the same as understanding
 
-AI can help you produce text at a speed that far outpaces your ability to think through the ideas behind it. If you find yourself generating pages of content in minutes, stop and ask whether you actually understand what is on the screen, or whether you are assembling text you haven't fully thought through. The purpose of a thesis is not to produce a document. It is to show that you can work through a problem, engage with existing research, and arrive at a conclusion you can defend. Much of that thinking happens during the writing process itself. Outsource the writing, and you risk outsourcing the thinking with it.
+AI can help you produce text at a speed that far outpaces your ability to think through the ideas behind it. If you find yourself generating pages of content in minutes, stop and ask whether you actually understand what is on the screen, or whether you are assembling text you haven't fully thought through. A thesis exists to show that you can work through a problem and arrive at a conclusion you can defend — the document is a by-product. Much of that thinking happens during the writing process itself. Outsource the writing, and you risk outsourcing the thinking with it.
 
 You are the author of your paper, not the AI. You are responsible for every claim and every citation. If an AI tool produces an incorrect reference, a flawed argument, or a misleading result and you include it, that is your mistake.
 

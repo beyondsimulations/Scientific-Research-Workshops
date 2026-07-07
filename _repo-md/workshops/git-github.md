@@ -54,7 +54,7 @@ This workshop covers <span class="highlight">Git and GitHub</span>. By the end, 
 
 ## Installing and configuring Git
 
-**macOS** (via Homebrew, which you installed in the earlier workshop):
+**macOS** (via Homebrew, which you installed in the [Working with AI](large-language-models.qmd) workshop):
 
 ``` bash
 brew install git
@@ -97,7 +97,7 @@ Git organizes your work into <span class="highlight">three zones</span>:
 2.  **Staging area:** changes you have selected for the next snapshot
 3.  **Repository:** permanent saved snapshots (commits)
 
-Think of it like writing an email: you draft the text (working directory), you review what to include (staging), you hit send (commit). The command `git add` moves changes to staging, and `git commit` saves the snapshot. This two-step process lets you choose exactly what goes into each commit.
+Think of it like writing an email: you draft the text (working directory), you choose what to include (staging), and you save it to your outbox (commit). Actually sending it --- putting it on GitHub --- happens later with `git push`. The command `git add` moves changes to staging, and `git commit` saves the snapshot. This two-step process lets you choose exactly what goes into each commit.
 
 You can interact with Git in two ways. **Zed's Git panel** lets you click to stage, commit, and view diffs visually, which is enough for most daily work. **Terminal commands** give you full control over every operation and work in any environment, not just Zed. We will teach both: start with Zed's visual tools for comfort, then learn the terminal commands so you understand what is happening underneath.
 
@@ -184,8 +184,9 @@ Some files should <span class="highlight">not be tracked</span>, such as compile
     _freeze/
     .DS_Store
     *.pdf
+    !images/*.pdf
 
-For a Quarto project, this means you track your `.qmd` source files but not the rendered output. The output can always be regenerated.
+For a Quarto project, this means you track your `.qmd` source files but not the rendered output. The output can always be regenerated. The `!images/*.pdf` line makes an exception: figure PDFs in your `images/` folder are inputs, not output, so they stay tracked.
 
 > **Note**
 >
@@ -195,7 +196,7 @@ For a Quarto project, this means you track your `.qmd` source files but not the 
 
 ## Setting up GitHub
 
-Go to [github.com](https://github.com) and sign up with your university email. Apply for the [GitHub Student Developer Pack](https://education.github.com/pack) for extra features. If you already set up GitHub for Copilot in the earlier workshop, you are ready to go.
+Go to [github.com](https://github.com) and sign up with your university email. Apply for the [GitHub Student Developer Pack](https://education.github.com/pack) for extra features. If you already set up GitHub for Copilot in the [Working with AI](large-language-models.qmd) workshop, you are ready to go.
 
 To create your first remote repository, click the **+** icon in the top-right corner and select **"New repository"**. Name it `my-project` (matching your local folder), leave it **public** (or private if you prefer), and **do not** initialize with a README since you already have one locally. Click **"Create repository"** and GitHub will show you setup instructions.
 
@@ -312,13 +313,13 @@ A clean folder structure makes your project easier to navigate, version-control,
 
 <div id="tbl-git-track">
 
-| Track with Git      | Do NOT track                       |
-|:--------------------|:-----------------------------------|
-| `.qmd` source files | Generated PDFs (`_site/`, `*.pdf`) |
-| `.bib` bibliography | Quarto cache (`_freeze/`)          |
-| Code and scripts    | Large datasets (use cloud storage) |
-| `.gitignore`        | System files (`.DS_Store`)         |
-| `typst-show.typ`    | Editor settings (`.vscode/`)       |
+| Track with Git      | Do NOT track                              |
+|:--------------------|:------------------------------------------|
+| `.qmd` source files | Rendered output (`_site/`, the paper PDF) |
+| `.bib` bibliography | Quarto cache (`_freeze/`)                 |
+| Code and scripts    | Large datasets (use cloud storage)        |
+| `.gitignore`        | System files (`.DS_Store`)                |
+| `typst-show.typ`    | Editor settings (`.vscode/`)              |
 
 Table 1: Version control decisions
 </div>
@@ -328,8 +329,11 @@ A good `.gitignore` for a Quarto thesis project:
     _site/
     _freeze/
     *.pdf
+    !images/*.pdf
     .DS_Store
     .quarto/
+
+Note the `!images/*.pdf` exception: without it, `*.pdf` would also ignore your figure PDFs in `images/`, and anyone cloning your repository could not render the paper.
 
 # <span class="flow">Wrap-up</span>
 

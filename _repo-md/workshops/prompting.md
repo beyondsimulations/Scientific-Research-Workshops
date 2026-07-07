@@ -33,7 +33,7 @@ This is <span class="highlight">correct but useless</span> --- generic advice yo
 
 ## Why does this happen?
 
-The AI does not know <span class="highlight">who you are</span> --- whether you are a first-year student or a PhD candidate. It has no idea <span class="highlight">what you already have</span>, be it 5 papers or 50, nor does it know <span class="highlight">what you actually need</span> --- a structure, a gap analysis, or a synthesis. And without being told, it cannot guess <span class="highlight">how you want the output</span> --- as a table, a paragraph, or bullet points.
+The AI knows nothing about you: <span class="highlight">who you are</span>, <span class="highlight">what you already have</span>, <span class="highlight">what you actually need</span>, and <span class="highlight">how you want the output</span>. First-year student or PhD candidate, 5 papers or 50, table or paragraph --- unless you tell it, it has to guess.
 
 ## The core problem
 
@@ -72,10 +72,10 @@ Your first prompt <span class="highlight">does not need to be perfect</span>. Tr
 
 Each component serves a specific purpose:
 
-- <span class="highlight">Role</span> --- by assigning a specific expertise, you shape the depth and vocabulary of the response, so the AI draws on the right domain knowledge instead of giving a generalist answer.
-- <span class="highlight">Background</span> --- anchoring the prompt in your specific situation (your field, your data, your progress) prevents the AI from making assumptions that miss the mark.
-- <span class="highlight">Task</span> --- a precisely stated task eliminates ambiguity, so the AI focuses on exactly what you need rather than guessing which of several possible requests you meant.
-- <span class="highlight">Format</span> --- specifying the output structure (table, bullet list, APA paragraph) means you get something immediately usable instead of spending time reformatting.
+- <span class="highlight">Role</span> sets the depth and vocabulary of the answer. "Act as a methodologist" draws on different knowledge than a blank prompt.
+- <span class="highlight">Background</span> anchors the response in your project --- your field, your data, your progress --- instead of the average student's.
+- <span class="highlight">Task</span> removes the guesswork about what you actually want done.
+- <span class="highlight">Format</span> saves you the reformatting: ask for a table, get a table.
 
 > **Note**
 >
@@ -95,7 +95,7 @@ Now compare that with a prompt that includes context:
 
 This prompt gives the AI <span class="highlight">enough context</span> to produce a useful, specific response --- tailored to the researcher's discipline, skill level, and dataset.
 
-# <span class="flow">Iteration in practice</span>
+# <span class="flow">Iteration in Practice</span>
 
 ## Refining your results
 
@@ -124,13 +124,13 @@ Your first response will rarely be exactly what you need. That is normal. Use <s
 >
 > "My data is not normally distributed according to the Shapiro-Wilk test. What non-parametric alternative should I use, and how do I run it in SPSS? Also, how should I report the results in APA format?"
 
-**Prompt 1** would get a generic overview of statistical tests. **Prompt 2** gives enough context for a <span class="highlight">specific recommendation</span>. **Prompt 3** addresses a real complication and asks for <span class="highlight">usable output</span>. Each prompt gives the model more to work with --- a clearer task and more context --- which is what <span class="highlight">turns a vague question into a concrete answer</span>.
+**Prompt 1** would get a generic overview of statistical tests. **Prompt 2** gives enough context for a <span class="highlight">specific recommendation</span>. **Prompt 3** addresses a real complication and asks for <span class="highlight">usable output</span>. Each prompt gives the model more to work with: a clearer task and more context.
 
 ## From lazy prompt to RBTF prompt
 
 > "Help me with my literature review on climate change"
 
-**Result:** A generic list of well-known climate change topics, basic search strategies, and textbook advice about synthesising sources. Nothing specific to your actual research.
+**Result:** A generic list of well-known climate change topics, basic search strategies, and textbook advice about synthesizing sources. Nothing specific to your actual research.
 
 Now apply RBTF to the same topic:
 
@@ -186,8 +186,8 @@ These are the key principles to take away:
 
 > **Important**
 >
-> AI does not replace your expertise. It **amplifies** it. The better researcher you are, the better results you will get from AI tools.
+> AI works best in the hands of someone who already knows the field. The better researcher you are, the more you will get out of these tools.
 
-> **Start practising today**
+> **Start practicing today**
 >
-> Pick one task from your current research --- a paragraph to draft, a method to choose, a source to summarise --- and try using the RBTF Framework. Compare the result to what you would get from a one-line prompt.
+> Pick one task from your current research --- a paragraph to draft, a method to choose, a source to summarize --- and try using the RBTF Framework. Compare the result to what you would get from a one-line prompt.

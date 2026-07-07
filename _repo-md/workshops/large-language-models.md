@@ -99,7 +99,7 @@ LLMs have several important limitations to be aware of:
 
 > **Warning**
 >
-> A [2025 Anthropic study](https://www.anthropic.com/research/AI-assistance-coding-skills) found that developers using AI scored 17% lower on comprehension tests (roughly two letter grades), with the biggest gap in debugging. Leaning on AI for code generation without engaging with what it produces erodes the skills you need to catch its mistakes.
+> A [2025 Anthropic study](https://www.anthropic.com/research/AI-assistance-coding-skills) found that developers using AI scored 17 percentage points lower on comprehension tests (roughly two letter grades), with the biggest gap in debugging. Leaning on AI for code generation without engaging with what it produces erodes the skills you need to catch its mistakes.
 
 # <span class="flow">Models, Apps & Harnesses</span>
 
@@ -144,7 +144,7 @@ Apps are <span class="highlight">how you access the models</span>.
 | **Gemini**  | gemini.google.com | Google    |
 | **Le Chat** | chat.mistral.ai   | Mistral   |
 
-All four offer free access to capable models, while paid tiers unlock stronger models and higher usage limits. Mistral also offers an <span class="highlight">affordable student tier</span> that includes Mistral Vibe, its terminal-based coding agent (covered below).
+All four offer free access to capable models, while paid tiers give you stronger models and higher usage limits. Mistral also offers an <span class="highlight">affordable student tier</span> that includes Mistral Vibe, its terminal-based coding agent (covered below).
 
 Every app also comes with a <span class="highlight">harness</span>, a system that gives the model **tools and capabilities**. Same model, different harness = **completely different results**.
 
@@ -235,7 +235,7 @@ GitHub Copilot is an AI pair programmer <span class="highlight">integrated into 
 
 ## Terminal-based AI tools
 
-Terminal-based coding assistants let you work with AI <span class="highlight">directly from the command line</span>, without leaving your editor or browser. Several options stand out:
+Terminal-based coding assistants let you work with AI <span class="highlight">directly from the command line</span>, without leaving your editor or browser. Three are worth knowing:
 
 **OpenCode**
 
@@ -251,7 +251,7 @@ For other platforms, see [opencode.ai](https://opencode.ai).
 
 **Claude Code**
 
-- Anthropic's <span class="highlight">CLI coding agent</span> that goes beyond suggestions: **autonomous multi-step task execution**
+- Anthropic's <span class="highlight">CLI coding agent</span>. Unlike autocomplete, it executes **multi-step tasks** on its own
 - Reads your entire codebase for context and can **plan, write, test, and debug** code autonomously
 - Executes terminal commands and iterates on errors, best for <span class="highlight">involved, multi-step tasks</span>
 
@@ -259,7 +259,7 @@ For other platforms, see [opencode.ai](https://opencode.ai).
 brew install --cask claude-code
 ```
 
-For other platforms, see [claude.ai/code](https://claude.ai/code).
+For other platforms, see [claude.com/claude-code](https://claude.com/claude-code).
 
 **Mistral Vibe**
 
@@ -280,7 +280,7 @@ For installation and details, see the [Mistral Vibe repository](https://github.c
 | **Zed** | IDE | Daily coding with AI assist | Free |
 | **GitHub Copilot** | IDE extension | Inline code suggestions | Free for students |
 | **OpenCode** | Terminal | Quick terminal tasks | Free (bring API key) |
-| **Claude Code** | Terminal agent | Multi-step tasks | API costs |
+| **Claude Code** | Terminal agent | Multi-step tasks | Subscription or API costs |
 | **Mistral Vibe** | Terminal agent | Multi-file changes | Free with student tier |
 
 <span class="question">Question</span>: When would you use a chat interface vs. a coding agent?
@@ -342,7 +342,7 @@ Use the output as a starting point. Ask follow-up questions to improve the resul
 - [Anthropic Research](https://www.anthropic.com/research): AI safety and interpretability
 - [One Useful Thing](https://www.oneusefulthing.org/): Ethan Mollick's blog on practical AI use
 - [Prompt Engineering Guide](https://www.promptingguide.ai/): Techniques for better prompts
-- [AI Assistance and Coding Skills](https://www.anthropic.com/research/AI-assistance-coding-skills): Anthropic's study on how AI help affects learning (the 17% finding cited in this workshop)
+- [AI Assistance and Coding Skills](https://www.anthropic.com/research/AI-assistance-coding-skills): Anthropic's study on how AI help affects learning (the comprehension finding cited in this workshop)
 - [The Many Masks LLMs Wear](https://www.understandingai.org/p/the-many-masks-that-llms-wear): Kai Williams on persona drift and why models behave unpredictably
 - [Effective Harnesses for Long-Running Agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents): Practical patterns for building agent systems that actually work
 

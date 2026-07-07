@@ -8,7 +8,7 @@ author:
 
 This page collects the questions we get asked most often. If your question is not covered here, contact us at [tobias.vlcek@uni-hamburg.de](mailto:tobias.vlcek@uni-hamburg.de?subject=Question%3A%20%3CYour%20subject%3E).
 
-# Topics and supervision
+# Topics and Supervision
 
 * **How do I get a topic for a seminar paper or thesis?**
   Topics are announced and assigned via STiNE at the start of each semester. For seminar papers, the kickoff session walks through the available topics and how the assignment works. For a bachelor or master thesis, get in touch by email if you are interested in a topic from one of our research areas, and we will discuss whether and how it can be supervised.
@@ -22,7 +22,7 @@ This page collects the questions we get asked most often. If your question is no
 * **Can I change my topic or supervisor after I have started?**
   Minor scope adjustments happen regularly and can usually be sorted out directly with your supervisor. A full topic change after registration is only possible in exceptional cases and should be raised with us as early as possible. The same applies to changing supervisors.
 
-# Format and language
+# Format and Language
 
 * **In which language do I write the paper and hold the presentation?**
   For seminar papers, the language for both the written paper and the presentation follows what was set for the course. For bachelor and master theses, you can submit in either English or German. There is no presentation requirement for bachelor or master theses at our institute.
@@ -36,7 +36,7 @@ This page collects the questions we get asked most often. If your question is no
 * **I am stuck with Quarto, Typst, or LaTeX. What now?**
   First, try working through the issue with a large language model like Claude or Mistral. They are very good at solving these kinds of problems, especially if you paste in the exact error message and the relevant snippet of your file. If that does not get you anywhere, book an appointment and we can look at it together.
 
-# Working with literature and AI
+# Working with Literature and AI
 
 * **How should I manage my references?**
   We recommend [Zotero](https://www.zotero.org/): it is free, runs on every platform, and works directly with Quarto and LaTeX through BibTeX. The [Literature Research](../workshops/literature-research.qmd) workshop walks through the full setup, from saving papers with the browser connector to citing them in your `.qmd` file with `[@key]`.
@@ -44,7 +44,7 @@ This page collects the questions we get asked most often. If your question is no
 * **Can I use AI tools while writing my paper?**
   Yes, with care, and every tool you use must be declared in the AI tools section of the template. Use LLMs to clean up sentences you have already drafted, to critique your work as if the feedback came from your supervisor, or to brainstorm. Do not use them to produce sections you did not think through yourself, and never use them for citations: they regularly invent references that look plausible but do not exist. Always verify every citation against the original source. The [Scientific Writing](scientific-writing.qmd) guide and the [Working with AI](../workshops/large-language-models.qmd) workshop go into more depth.
 
-# Submission and deadlines
+# Submission and Deadlines
 
 * **How do I submit my final work?**
   Bachelor and master theses are submitted through the examination office; the formal procedure is documented on the faculty website. Seminar papers are submitted directly to your supervisor by the deadline announced in the kickoff. Submit a PDF, not a Word file.
@@ -52,6 +52,6 @@ This page collects the questions we get asked most often. If your question is no
 * **What happens if I cannot meet the deadline?**
   For bachelor and master theses, deadlines are formal and can only be extended through the examination office, usually with a medical certificate. For seminar papers, extensions are not possible: missing the deadline means failing this attempt and retaking the seminar in a later semester. Plan accordingly and start early.
 
-# Still have questions?
+# Still Have Questions?
 
 If your question is not covered above, contact us at [tobias.vlcek@uni-hamburg.de](mailto:tobias.vlcek@uni-hamburg.de?subject=Question%3A%20%3CYour%20subject%3E).

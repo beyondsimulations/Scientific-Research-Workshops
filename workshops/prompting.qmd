@@ -44,7 +44,7 @@ This is [correct but useless]{.highlight} — generic advice you could find on a
 
 ## Why does this happen?
 
-The AI does not know [who you are]{.highlight} — whether you are a first-year student or a PhD candidate. It has no idea [what you already have]{.highlight}, be it 5 papers or 50, nor does it know [what you actually need]{.highlight} — a structure, a gap analysis, or a synthesis. And without being told, it cannot guess [how you want the output]{.highlight} — as a table, a paragraph, or bullet points.
+The AI knows nothing about you: [who you are]{.highlight}, [what you already have]{.highlight}, [what you actually need]{.highlight}, and [how you want the output]{.highlight}. First-year student or PhD candidate, 5 papers or 50, table or paragraph — unless you tell it, it has to guess.
 
 ## The core problem
 
@@ -97,10 +97,10 @@ You would never hand a new colleague a one-sentence instruction and expect perfe
 
 Each component serves a specific purpose:
 
-- [Role]{.highlight} — by assigning a specific expertise, you shape the depth and vocabulary of the response, so the AI draws on the right domain knowledge instead of giving a generalist answer.
-- [Background]{.highlight} — anchoring the prompt in your specific situation (your field, your data, your progress) prevents the AI from making assumptions that miss the mark.
-- [Task]{.highlight} — a precisely stated task eliminates ambiguity, so the AI focuses on exactly what you need rather than guessing which of several possible requests you meant.
-- [Format]{.highlight} — specifying the output structure (table, bullet list, APA paragraph) means you get something immediately usable instead of spending time reformatting.
+- [Role]{.highlight} sets the depth and vocabulary of the answer. "Act as a methodologist" draws on different knowledge than a blank prompt.
+- [Background]{.highlight} anchors the response in your project — your field, your data, your progress — instead of the average student's.
+- [Task]{.highlight} removes the guesswork about what you actually want done.
+- [Format]{.highlight} saves you the reformatting: ask for a table, get a table.
 
 :::{.callout-note}
 You do not always need all four components. But the more you include, the better the result will be.
@@ -120,7 +120,7 @@ Now compare that with a prompt that includes context:
 
 This prompt gives the AI [enough context]{.highlight} to produce a useful, specific response — tailored to the researcher's discipline, skill level, and dataset.
 
-# [Iteration in practice]{.flow}
+# [Iteration in Practice]{.flow}
 
 ## Refining your results
 
@@ -154,13 +154,13 @@ Your first response will rarely be exactly what you need. That is normal. Use [f
 "My data is not normally distributed according to the Shapiro-Wilk test. What non-parametric alternative should I use, and how do I run it in SPSS? Also, how should I report the results in APA format?"
 :::
 
-**Prompt 1** would get a generic overview of statistical tests. **Prompt 2** gives enough context for a [specific recommendation]{.highlight}. **Prompt 3** addresses a real complication and asks for [usable output]{.highlight}. Each prompt gives the model more to work with — a clearer task and more context — which is what [turns a vague question into a concrete answer]{.highlight}.
+**Prompt 1** would get a generic overview of statistical tests. **Prompt 2** gives enough context for a [specific recommendation]{.highlight}. **Prompt 3** addresses a real complication and asks for [usable output]{.highlight}. Each prompt gives the model more to work with: a clearer task and more context.
 
 ## From lazy prompt to RBTF prompt
 
 > "Help me with my literature review on climate change"
 
-**Result:** A generic list of well-known climate change topics, basic search strategies, and textbook advice about synthesising sources. Nothing specific to your actual research.
+**Result:** A generic list of well-known climate change topics, basic search strategies, and textbook advice about synthesizing sources. Nothing specific to your actual research.
 
 Now apply RBTF to the same topic:
 
@@ -230,10 +230,10 @@ These are the key principles to take away:
 - [Always verify]{.highlight} — AI is a useful assistant, not an oracle
 
 :::{.callout-important}
-AI does not replace your expertise. It **amplifies** it. The better researcher you are, the better results you will get from AI tools.
+AI works best in the hands of someone who already knows the field. The better researcher you are, the more you will get out of these tools.
 :::
 
 :::{.callout-tip}
-### Start practising today
-Pick one task from your current research — a paragraph to draft, a method to choose, a source to summarise — and try using the RBTF Framework. Compare the result to what you would get from a one-line prompt.
+### Start practicing today
+Pick one task from your current research — a paragraph to draft, a method to choose, a source to summarize — and try using the RBTF Framework. Compare the result to what you would get from a one-line prompt.
 :::

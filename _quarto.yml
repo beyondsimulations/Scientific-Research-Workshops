@@ -17,6 +17,7 @@ project:
   resources:
     - templates/seminar-paper-en.qmd
     - templates/seminar-paper-de.qmd
+    - templates/Template.tex
     - templates/Vorlage.tex
     - templates/references.bib
     - templates/typst-show.typ
@@ -42,13 +43,13 @@ website:
       - text: "***"
       - text: "Scientific Writing"
         href: general/scientific-writing.qmd
-      - text: "Literature"
+      - text: "Literature Research"
         href: workshops/literature-research.qmd
-      - text: "AI Tools"
+      - text: "Working with AI"
         href: workshops/large-language-models.qmd
-      - text: "Prompting"
+      - text: "AI Prompting"
         href: workshops/prompting.qmd
-      - text: "Version Control"
+      - text: "Git & GitHub"
         href: workshops/git-github.qmd
       - text: "Quarto"
         href: workshops/quarto-academic-writing.qmd
@@ -61,7 +62,7 @@ website:
         href: general/faq.qmd
 
   page-footer:
-    center: "Scientific Research Workshops, Prof. Dr. Knut Haase & Dr. Tobias Vlćek</br>CC BY-SA 4.0"
+    center: "Scientific Research Workshops, Prof. Dr. Knut Haase & Dr. Tobias Vlćek<br>CC BY-SA 4.0"
     left:
       - icon: github
         href: https://github.com/beyondsimulations/Scientific-Research-Workshops

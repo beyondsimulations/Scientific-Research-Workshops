@@ -7,7 +7,7 @@ author:
 ---
 
 
-This page collects the tools, databases, and references mentioned across the workshops. Use it as a quick-reference when you need a link or want to explore a topic further.
+This page collects the tools, databases, and references mentioned across the workshops. Use it as a quick reference when you need a link or want to explore a topic further.
 
 # AI Models and Apps
 
@@ -18,8 +18,8 @@ These are LLMs hosted by companies, which you can access through their websites 
 - [OpenAI (ChatGPT)](https://chatgpt.com): The creators of ChatGPT, currently on the GPT-5 series. General-purpose models with text, image, and voice capabilities. The free tier uses a weaker model; paid plans give access to the latest version.
 - [Anthropic (Claude)](https://claude.ai): Strong at reasoning, coding, and handling long documents. Claude Opus and Sonnet are the main models, with a limited free tier.
 - [Google (Gemini)](https://gemini.google.com): Google's LLM with tight integration into Google services (Docs, Sheets, Gmail) and multimodal capabilities including image and video understanding.
-- [Mistral (Le Chat)](https://chat.mistral.ai/): A European provider based in France. Offers an affordable student tier and access to Mistral Vibe, and their models run well for both English and European languages.
-- [NotebookLM](https://notebooklm.google/): Google's Gemini that can be fed with files, images, and YouTube videos to generate text based on the content. Great for understanding and summarizing content from lectures or to create podcasts from papers.
+- [Mistral (Le Chat)](https://chat.mistral.ai/): A European provider based in France. Offers an affordable student tier and access to Mistral Vibe, and their models work well in English and other European languages.
+- [NotebookLM](https://notebooklm.google/): Google's Gemini-based research tool. You feed it documents, slides, and YouTube videos, and it answers questions grounded in those sources. Useful for summarizing lecture material or turning papers into podcasts.
 
 ## Local LLMs and tools
 
@@ -36,7 +36,7 @@ These are the tools covered in the [Working with AI](../workshops/large-language
 - [Zed](https://zed.dev/): A modern, fast code editor built in Rust with built-in AI assistant support. Recommended for this course. Offers a [free student tier](https://zed.dev/education) with unlimited edit predictions and monthly API credits when you sign up with a GitHub account and university email; see the linked page for current terms.
 - [GitHub Copilot](https://github.com/features/copilot): AI pair programmer that provides inline code suggestions as you type. Integrates into VS Code, Zed, and JetBrains. Free for students via the [GitHub Student Developer Pack](https://education.github.com/pack).
 - [OpenCode](https://opencode.ai): Open-source terminal-based AI coding assistant. Lightweight and fast, supports multiple AI providers with your own API keys. Good for quick file edits and terminal tasks.
-- [Claude Code](https://claude.ai/code): Anthropic's CLI coding agent for autonomous multi-step tasks. Reads your entire codebase for context, runs terminal commands, and iterates on errors. Requires a Claude subscription or Anthropic API key.
+- [Claude Code](https://claude.com/claude-code): Anthropic's CLI coding agent for autonomous multi-step tasks. Reads your entire codebase for context, runs terminal commands, and iterates on errors. Requires a Claude subscription or Anthropic API key.
 - [Mistral Vibe](https://github.com/mistralai/mistral-vibe): Mistral's open-source CLI coding agent. It scans your project's file structure and Git status, supports natural language commands, and can modify and execute changes across multiple files. Included in the [Mistral Student subscription](https://help.mistral.ai/en/articles/347553-as-a-student-am-i-eligible-for-a-discount-on-le-chat-pro).
 
 # Literature Research
@@ -57,7 +57,7 @@ These databases index peer-reviewed journals, conference proceedings, and workin
 
 These tools use AI to surface papers you might miss through keyword search alone. They are good for exploring how papers connect and for getting a quick overview of a research field, but always verify what they find by reading the actual papers.
 
-- [Semantic Scholar](https://www.semanticscholar.org/): AI-powered academic search engine that finds related papers and surfaces connections across disciplines. Also provides TLDR summaries and citation context for many papers.
+- [Semantic Scholar](https://www.semanticscholar.org/): Academic search engine that suggests related papers, including across disciplines. Also provides TLDR summaries and citation context for many papers.
 - [Connected Papers](https://www.connectedpapers.com/): Builds a visual graph of related papers from a seed paper. The graph shows similarity (not citation direction), so you can see clusters of related work at a glance.
 - [Elicit](https://elicit.com/): AI research assistant that extracts findings from papers and helps with systematic reviews. You can ask it a research question and it will pull relevant results from the literature.
 - [Research Rabbit](https://www.researchrabbit.ai/): Discovers related work from seed papers you provide. Works like a recommendation engine for academic literature: add papers you know, and it suggests what to read next.
@@ -84,7 +84,7 @@ If your thesis involves implementing optimization models, the following resource
 
 - [Optimization with Julia](https://beyondsimulations.github.io/Optimization-with-Julia/): A full course on mathematical optimization with Julia, covering linear programming, mixed-integer programming, and heuristics. Includes hands-on exercises and solver integration. This is the recommended programming course at the institute.
 - [Gurobi](https://www.gurobi.com/): Commercial optimization solver with a [free academic license](https://www.gurobi.com/academia/academic-program-and-licenses/). One of the fastest solvers available for LP, MIP, and QP. Install via the website after obtaining your academic license.
-- [HiGHs](https://highs.dev/): Open-source solver for linear and mixed-integer programming. No license required, easy to install (`pip install highspy` or via Julia's package manager). A good default if you don't need Gurobi's speed.
+- [HiGHS](https://highs.dev/): Open-source solver for linear and mixed-integer programming. No license required, easy to install (`pip install highspy` or via Julia's package manager). A good default if you don't need Gurobi's speed.
 
 # Academic Writing Tools
 
@@ -106,10 +106,10 @@ These tools are covered in the [Git & GitHub](../workshops/git-github.qmd) works
 
 These resources go deeper into how AI works and how to use it effectively. They complement the [Working with AI](../workshops/large-language-models.qmd) and [AI Prompting](../workshops/prompting.qmd) workshops.
 
-- [One Useful Thing](https://www.oneusefulthing.org/): Ethan Mollick's blog on practical AI use. His [Guide to Which AI to Use](https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the) explains the models, apps, and harnesses framework used in the first workshop and is updated regularly as new models appear.
-- [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw): Visual explanations of how LLMs and neural networks work, by Grant Sanderson. The videos on attention and transformers are particularly useful for understanding the concepts from the first workshop.
+- [One Useful Thing](https://www.oneusefulthing.org/): Ethan Mollick's blog on practical AI use. His [Guide to Which AI to Use](https://www.oneusefulthing.org/p/a-guide-to-which-ai-to-use-in-the) explains the models, apps, and harnesses framework used in the Working with AI workshop and is updated regularly as new models appear.
+- [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw): Visual explanations of how LLMs and neural networks work, by Grant Sanderson. The videos on attention and transformers are particularly useful for understanding the concepts from the Working with AI workshop.
 - [Prompt Engineering Guide](https://www.promptingguide.ai/): A community-maintained collection of prompting techniques and strategies. Covers zero-shot, few-shot, chain-of-thought, and other approaches beyond the RBTF framework taught in the prompting workshop.
-- [AI Assistance and Coding Skills](https://www.anthropic.com/research/AI-assistance-coding-skills): A 2025 Anthropic study that ran a randomized trial with 52 developers. Those using AI scored 17% lower on comprehension tests, with the biggest gap in debugging. However, developers who asked for explanations rather than just code performed nearly as well as those coding by hand.
+- [AI Assistance and Coding Skills](https://www.anthropic.com/research/AI-assistance-coding-skills): A 2025 Anthropic study that ran a randomized trial with 52 developers. Those using AI scored 17 percentage points lower on comprehension tests, with the biggest gap in debugging. However, developers who asked for explanations rather than just code performed nearly as well as those coding by hand.
 - [The Many Masks LLMs Wear](https://www.understandingai.org/p/the-many-masks-that-llms-wear): Kai Williams at Understanding AI on how LLMs shift personas mid-conversation, how fine-tuning on one task can trigger unexpected behavior elsewhere, and what that means for trusting model output.
 - [Effective Harnesses for Long-Running Agents](https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents): Justin Young at Anthropic Engineering on building agent systems that work across multiple sessions. Covers a two-agent architecture with progress tracking and automated testing, offering a concrete example of why the harness matters more than the model.
 
