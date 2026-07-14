@@ -1,0 +1,367 @@
+% Basic document setup
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[a4paper,top=30mm,bottom=20mm,left=40mm,right=25mm]{geometry}
+\usepackage[onehalfspacing]{setspace}
+\usepackage{lmodern}
+
+% Symbols for mathematical formulas
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+% Tables and figures
+\usepackage{booktabs}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+% Miscellaneous adjustments
+\usepackage[printonlyused]{acronym}
+\setlength\belowcaptionskip{10pt}
+
+% Bibliography
+\usepackage{csquotes}
+\usepackage[style=apa, backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+% Beginning of the document
+\begin{document}
+
+% Title page
+\setcounter{page}{0} % numbers the title page as page 0 in the PDF
+	\begin{titlepage}
+		\begin{center}
+			{\LARGE\scshape University of Hamburg}\\*[5mm]
+      		{\normalsize Faculty of Business Administration\\
+			Institute of Logistics, Transport and Production}\\*[3cm]
+      		{\Large\scshape Bachelor/Master Thesis/Seminar Paper}\\*[12mm]
+      		{\bfseries\Large\scshape Title of the Bachelor/Master Thesis}\\*[12mm] % insert title here #############
+      		{\rmfamily Independent academic work\\
+           	submitted for the degree of ``Bachelor/Master of Science''\\
+           	in the degree program \ldots} \\*[12mm]
+      		{\normalsize\rmfamily Hamburg, \ldots} % insert date here #############
+		\end{center}
+		\vspace{8cm}
+		\begin{tabbing}
+			Semester: \= \hspace{70mm}\= \kill
+ 			submitted by: \>\> supervised by: \\*[2mm]
+      		\textbf{LAST NAME, FIRST NAME} \>\>  Prof. Dr. Knut Haase\\*[2mm] % insert name here #############
+      		Matriculation no.: \> XXXXXXX \>  \\*[2mm] % insert matriculation number and supervisor here #############
+      		Semester: \> X \\*[2mm] % insert semester here #############
+      		E-mail: firstname.lastname@studium.uni-hamburg.de % insert e-mail address here #############
+		\end{tabbing}
+  \end{titlepage}
+
+% Table of contents
+\newpage
+\pagenumbering{Roman}
+\tableofcontents
+
+% List of figures
+\newpage
+\addcontentsline{toc}{section}{List of Figures}
+\listoffigures
+
+% List of tables
+\newpage
+\addcontentsline{toc}{section}{List of Tables}
+\listoftables
+
+% List of abbreviations
+% Add or remove entries. Sort alphabetically.
+% Spell out each abbreviation at its first use in the text.
+\newpage
+\addcontentsline{toc}{section}{List of Abbreviations}
+\section*{List of Abbreviations}
+\begin{acronym}[VRP]
+	\acro{LLM}{Large Language Model}
+	\acro{OR}{Operations Research}
+	\acro{VRP}{Vehicle Routing Problem}
+\end{acronym}
+
+% List of symbols
+% Add or remove entries. Sort alphabetically.
+\newpage
+\addcontentsline{toc}{section}{List of Symbols}
+\section*{List of Symbols}
+\begin{tabular}{p{0.08\textwidth} p{0.92\textwidth}}
+	$c_{ij}$ & Travel cost from location $i$ to location $j$\\
+	$d_i$ & Demand of customer $i \in \mathcal{I}$\\
+	$\mathcal{I}$ & Set of customers\\
+	$\mathcal{J}$ & Set of all locations (customers and depot)\\
+	$x_{ij}$ & Binary variable, 1 if a vehicle travels from $i$ to $j$
+\end{tabular}
+
+\newpage
+\pagenumbering{arabic}
+
+% ============================================================
+%   USING THIS TEMPLATE
+%
+%   1. Adjust the title page above (watch for the ############# markers)
+%   2. Add your references to references.bib (Zotero + Better BibTeX)
+%   3. Write your content below in LaTeX
+%   4. Compile: pdflatex → biber → pdflatex → pdflatex
+%
+%   QUICK REFERENCE
+%   Citations:     \parencite{key} → (Author, Year)
+%                  \textcite{key}  → Author (Year)
+%                  \parencite{a,b} → multiple
+%                  \parencite[p.~42]{key} → with page
+%   Cross-refs:    \ref{fig:label}  \ref{tab:label}  \ref{eq:label}  \ref{sec:label}
+%   Figures:       \begin{figure}[H] ... \caption{...} \label{fig:...} \end{figure}
+%   Tables:        \begin{table}[H] ... \caption{...} \label{tab:...} \end{table}
+%   Equations:     \begin{align} ... \label{eq:...} \end{align}
+%   Sections:      \section{...} \label{sec:...}
+%
+%   FORMATTING — BASICS
+%   Bold:          \textbf{bold text}
+%   Italic:        \textit{italic text}   or   \emph{emphasized}
+%   Underlined:    \underline{underlined text}
+%   Monospace:     \texttt{code or file name}
+%   Bullet list:   \begin{itemize}
+%                    \item Item 1
+%                    \item Item 2
+%                    \begin{itemize}
+%                      \item Sub-item (nested)
+%                    \end{itemize}
+%                  \end{itemize}
+%   Numbered list: \begin{enumerate}
+%                    \item First
+%                    \item Second
+%                  \end{enumerate}
+%   Footnotes:     Text\footnote{This is a footnote.}
+%   Links:         \href{https://example.com}{link text}  (hyperref package)
+%   Spacing:       \vspace{1cm}  (vertical)
+%                  \hspace{1cm}  (horizontal)
+%                  ~             (non-breaking space, e.g. Figure~\ref{})
+%                  \,            (thin space, e.g. 16\,GB)
+%   En dash:       -- (for ranges, e.g. pages 5--10)
+%
+%   COMMON MISTAKES
+%   - Every figure and table must be referenced in the text *before*
+%     it appears.
+%   - Figures have captions below (\caption after \includegraphics),
+%     tables above (\caption before \begin{tabular}).
+%   - Do not start sentences with a symbol ("$X$ is..." →
+%     "The variable $X$ is...").
+%   - Keep notation consistent — do not switch between $X_{ij}$ and $X(i,j)$.
+%   - No orphaned subsections (a single \subsection inside a \section).
+%   - Every section/subsection should be at least one page long.
+%     If not, merge it with another section.
+%   - Spell out abbreviations at first use with \ac{}, then use the
+%     short form consistently.
+%   - Do not cite Wikipedia or lecture slides — find the original source.
+%   - Use en dashes (--) for ranges (pages 5--10), not hyphens (-).
+%   - Spell out numbers one to twelve in running text, use digits from 13.
+%   - Thin space before units: 16\,GB, 245\,s.
+%   - Non-breaking space before \ref: Figure~\ref{fig:...}
+% ============================================================
+
+% WRITING GUIDE: Introduction
+% Structure the introduction as a funnel:
+%   1. Broad context — why does this field matter?
+%   2. Specific problem — what is the concrete challenge?
+%   3. Research gap — what is missing in the literature so far?
+%   4. Your contribution — what does this work deliver?
+%   5. Outline — briefly describe the structure of the paper.
+% Tip: Write this section last, once you know your actual contribution.
+% It should answer: Why should the reader care? What is new here?
+\section{Introduction}
+\label{sec:introduction}
+Route planning accounts for a substantial share of distribution costs in road freight transport. Since the \ac{VRP} was first formalized by \textcite{dantzig1959truck}, advances in solution methods have made it possible to solve increasingly large problem instances \parencite{desaulniers2005column}. This paper addresses the problem of \ldots
+
+Figure \ref{fig:example} shows a schematic overview of the problem structure.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{images/Image.pdf}
+	\caption{Replace this with your own figure.}
+	\label{fig:example}
+\end{figure}
+
+The remainder of this paper is structured as follows. Section \ref{sec:literature} reviews the relevant literature. Section \ref{sec:model} introduces the mathematical model, including the underlying assumptions in Section \ref{sec:assumptions} and the formal formulation in Section \ref{sec:formulation}. Section \ref{sec:computational} presents the computational study, Section \ref{sec:discussion} discusses the findings, and Section \ref{sec:conclusion} concludes with a summary and outlook for future research.
+
+% WRITING GUIDE: Literature Review
+% - Group sources by theme or method, not chronologically.
+% - Don't just summarize — compare approaches, identify strengths and
+%   weaknesses, and show the gap your work fills.
+% - Every cited work should connect to your research question.
+% - End with a transition to your own contribution: what remains unsolved?
+% - Use \parencite{key} for parenthetical and \textcite{key} for narrative
+%   citations.
+\section{Literature Review}
+\label{sec:literature}
+The \ac{VRP} has been studied extensively since the seminal work of \textcite{dantzig1959truck}. Several exact and heuristic approaches have been proposed over the decades \parencite{toth2014vehicle}.
+
+Column generation has proven to be a particularly effective technique for solving large routing and scheduling problems \parencite{desaulniers2005column}. Recent advances in machine learning have also been applied to improve heuristic performance \parencite{bengio2021machine}.
+
+A comprehensive overview of solution methods is beyond the scope of this paper. For a detailed survey, the reader is referred to \textcite{toth2014vehicle}.
+
+% WRITING GUIDE: Model
+% Give a brief overview of the modeling approach before diving into
+% details. Split into assumptions (what you simplify) and formulation
+% (the math).
+\section{Model}
+\label{sec:model}
+This section introduces the mathematical model for the problem described above. We first state the key assumptions, then present the formal formulation.
+
+% WRITING GUIDE: Assumptions
+% - Every assumption must be justified: why is it reasonable?
+% - Acknowledge limitations: what would change if an assumption is relaxed?
+% - Order from most fundamental to most specific.
+\subsection{Assumptions}
+\label{sec:assumptions}
+The modeling of the problem requires several simplifying assumptions:
+\begin{itemize}
+	\item A single depot serves as the starting and ending point for all vehicles.
+	\item Each customer $i \in \mathcal{I}$ has a known demand $d_i$ that must be fully satisfied.
+	\item The fleet consists of identical vehicles with a common capacity.
+	\item Travel costs $c_{ij}$ between locations $i$ and $j$ are symmetric and satisfy the triangle inequality.
+\end{itemize}
+
+% WRITING GUIDE: Formulation
+% - Define all notation before using it.
+% - Use consistent conventions: sets = calligraphic ($\mathcal{J}$),
+%   variables = uppercase ($X_j$), parameters = lowercase ($b_i$).
+% - Every constraint must be explained in prose — don't just list equations.
+% - Reference constraints by label:
+%   "Constraint (\ref{eq:assignment}) ensures..."
+%
+% TABLE DESIGN TIPS
+% - Use booktabs style (\toprule, \midrule, \bottomrule) — no vertical
+%   lines.
+% - Right-align numeric columns (r), left-align text columns (l).
+% - Put units in column headers, not in every cell.
+% - Keep tables compact — avoid unnecessary columns.
+\subsection{Formulation}
+\label{sec:formulation}
+Sets use calligraphic symbols ($\mathcal{J}$), variables use uppercase letters ($X_j$, $j \in \mathcal{J}$), and parameters and indices use lowercase letters ($b_i$).
+% NOTE: A full VRP formulation would also include vehicle capacity and
+% subtour-elimination constraints. They are omitted here to keep this
+% example model short.
+The model is defined as follows:
+\begin{align}
+	\label{eq:objective}
+	\min \sum_{i \in \mathcal{J}} \sum_{j \in \mathcal{J}} c_{ij} \cdot x_{ij} & \\
+	\intertext{subject to}
+	\label{eq:assignment}
+	\sum_{j \in \mathcal{J}} x_{ij} = 1 && \forall i \in \mathcal{I} \\
+	\label{eq:flow}
+	\sum_{i \in \mathcal{J}} x_{ij} = 1 && \forall j \in \mathcal{I} \\
+	\label{eq:binary}
+	x_{ij} \in \{0, 1\} && \forall i, j \in \mathcal{J}
+\end{align}
+The objective function (\ref{eq:objective}) minimizes total travel cost. Constraint (\ref{eq:assignment}) ensures that exactly one vehicle departs from each customer, while (\ref{eq:flow}) ensures that exactly one vehicle arrives at each customer. (\ref{eq:binary}) defines the binary decision variables.
+
+% WRITING GUIDE: Computational Study
+% - Report hardware (CPU, RAM), software (solver, version), and language.
+% - Describe instance sources or how you generated test data.
+% - Always compare against a baseline, benchmark, or exact solution.
+% - Report both solution quality (gap, objective value) and computation
+%   time.
+% - Discuss trends across instance sizes, don't just list individual
+%   numbers.
+% - Mention time limits, number of runs, or other experimental parameters.
+\section{Computational Study}
+\label{sec:computational}
+To evaluate the performance of the proposed approach, we conduct a series of computational experiments. All experiments were performed on a machine with an Intel Core i7 processor and 16\,GB of RAM. The model was implemented in Python using Gurobi 11.0 as the solver.
+
+Table \ref{tab:results} shows the computational results comparing exact and heuristic solutions.
+\begin{table}[H]
+	\centering
+	\caption{Computational results comparing exact and heuristic solutions}
+	\label{tab:results}
+	\begin{tabular}{lcrrrr}
+		\toprule
+		Instance & $|\mathcal{I}|$ & Optimal & Heuristic & Gap (\%) & Time (s)\\
+		\midrule
+		Small-1  & 25  &   245.3 &   248.1 & 1.14 &    0.8\\
+		Small-2  & 25  &   312.7 &   318.4 & 1.82 &    1.1\\
+		Medium-1 & 50  & 1,340.5 & 1,382.9 & 3.16 &   12.4\\
+		Medium-2 & 50  & 1,128.3 & 1,167.2 & 3.45 &   15.7\\
+		Large-1  & 100 & 3,450.1 & 3,621.3 & 4.96 &  238.7\\
+		Large-2  & 100 & 4,217.8 & 4,485.6 & 6.35 &  310.2\\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+The results in Table \ref{tab:results} show that the heuristic approach finds near-optimal solutions within reasonable computation times. For small instances, the optimality gap remains below 2\%, while for larger instances the gap increases to approximately 5--6\%.
+
+% WRITING GUIDE: Discussion
+% - Interpret your results in the context of the research question.
+% - Compare findings with existing literature: are they consistent?
+%   Where do they differ, and why?
+% - Discuss limitations honestly — every study has them.
+% - Distinguish observation (the data shows X) from interpretation
+%   (this suggests Y).
+% - Address unexpected results rather than ignoring them.
+% - Do not introduce entirely new topics here. New research directions
+%   belong in the conclusion's outlook.
+\section{Discussion}
+\label{sec:discussion}
+The results indicate that the proposed heuristic performs well for small and medium instances but shows increasing optimality gaps for larger problem sizes. This is consistent with findings by \textcite{toth2014vehicle}, who observed similar scaling behavior for constructive heuristics applied to capacitated routing problems.
+
+A key limitation of this study is the use of symmetric cost matrices, which may not hold in real-world logistics networks with one-way streets or time-dependent travel times. Furthermore, the test instances were generated randomly rather than derived from real-world data, which limits the generalizability of the results.
+
+% WRITING GUIDE: Conclusion
+% - Distinguish summary (what you did and found) from outlook
+%   (future work).
+% - Do not introduce new results or analysis here.
+% - Future research directions should be concrete and actionable,
+%   not vague ("further research is needed").
+% - Don't overclaim: use "suggests" rather than "proves",
+%   "indicates" rather than "demonstrates" — unless you have formal proof.
+\section{Conclusion and Outlook}
+\label{sec:conclusion}
+This paper presented a mathematical model and heuristic solution approach for the vehicle routing problem. The computational study indicates that the proposed method finds near-optimal solutions in a fraction of the computation time of the exact method.
+
+Two directions for future research emerge from this work. The model could be extended to incorporate time windows and heterogeneous fleets. In addition, the heuristic could be enhanced with machine learning techniques to improve initial solution quality.
+
+% Print the bibliography
+\newpage
+\pagenumbering{Roman}
+\setcounter{page}{6} % adjust to the actual page number if needed
+\addcontentsline{toc}{section}{References}
+\printbibliography
+
+\newpage
+\addcontentsline{toc}{section}{Declaration of Authorship}
+\section*{Declaration of Authorship}
+I hereby declare that I have written this work independently and without outside help, and that I have not used any sources or aids other than those indicated in the attached bibliography. All passages taken verbatim or in substance from published or unpublished sources are identified as such. All internet sources are attached to the work. Furthermore, I declare that I have not previously submitted this work in any other examination procedure and that the submitted written version corresponds to the version on the electronic storage medium.
+
+\vspace{2cm}
+\begin{flushleft}
+Hamburg, date \\
+\vspace{0.5cm}
+First Name Last Name \end{flushleft}
+
+\newpage
+\section*{Use of AI Tools}
+\addcontentsline{toc}{section}{Use of AI Tools}
+
+% List the AI tools you used and describe how you used them.
+% Be specific: which tool, for which tasks, and how you verified the output.
+% Examples:
+%   - "ChatGPT: Used for brainstorming the structure of the literature review"
+%   - "Claude: Used for debugging Python code in the computational study"
+%   - "GitHub Copilot: Used for code completion in the implementation"
+%   - "Grammarly: Used for proofreading and improving clarity of Section 3"
+% All AI-generated content must be reviewed, verified, and revised by you.
+
+The following AI tools were used during the preparation of this work:
+
+\begin{itemize}
+	\item \textbf{Tool 1}: Used for \ldots
+	\item \textbf{Tool 2}: Used for \ldots
+	\item \textbf{Tool 3}: Used for \ldots
+\end{itemize}
+
+\vspace{2cm}
+\begin{flushleft}
+Hamburg, date \\
+\vspace{0.5cm}
+First Name Last Name \end{flushleft}
+\end{document}
