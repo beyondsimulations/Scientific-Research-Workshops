@@ -1,0 +1,19 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="none" role="img" aria-label="Research Workshops">
+
+  <g stroke="#52717a" stroke-width="2">
+    <path d="M8 24 L8 8 L24 8"></path>
+    <path d="M76 8 L92 8 L92 24"></path>
+    <path d="M92 76 L92 92 L76 92"></path>
+    <path d="M24 92 L8 92 L8 76"></path>
+  </g>
+  <path d="M32 24 L32 76" stroke="#e4b169" stroke-width="2.4" opacity="1"></path>
+  <path d="M32 40 C 44 40, 54 41, 54 50" stroke="#e4b169" stroke-width="2.2" opacity="0.75"></path>
+  <path d="M54 50 C 54 60, 44 63, 32 63" stroke="#e4b169" stroke-width="2.2" opacity="0.75"></path>
+  <g fill="#e4b169">
+    <circle cx="32" cy="28" r="3.6"></circle>
+    <circle cx="32" cy="40" r="3.6"></circle>
+    <circle cx="54" cy="50" r="3.6" opacity="0.75"></circle>
+    <circle cx="32" cy="76" r="3.6"></circle>
+  </g>
+  <circle cx="32" cy="63" r="5" fill="#52717a"></circle>
+</svg>

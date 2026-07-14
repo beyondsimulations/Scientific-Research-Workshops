@@ -26,6 +26,7 @@ project:
     - helpers/convert_qmd_to_md.py
 
 website:
+  favicon: images/favicon.svg
   title: "Scientific Research Workshops"
   repo-url: https://github.com/beyondsimulations/Scientific-Research-Workshops
   repo-branch: main
@@ -34,7 +35,8 @@ website:
   bread-crumbs: true
   sidebar:
     style: floating
-    logo: https://images.beyondsimulations.com/logo/midjourney-solar-mirror.png
+    logo: images/course-logo.svg
+    logo-alt: "Scientific Research Workshops"
     collapse-level: 1
     search: true
     contents:
@@ -94,6 +96,7 @@ format:
     code-overflow: wrap
     include-in-header:
       - general/header.html
+      - general/favicon.html
     include-after-body:
       text: |
         <script defer src="https://oshu.eu/widget.js"></script>
