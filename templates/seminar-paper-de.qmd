@@ -9,6 +9,7 @@ format:
     toc: false
     toc-depth: 3
     number-sections: true
+    papersize: a4 # DIN A4
     margin:
       top: 30mm
       bottom: 20mm
@@ -19,6 +20,7 @@ format:
       text: |
         // ==== TITELSEITE — Felder mit ← anpassen ====
         #page(numbering: none)[
+          #set par(justify: false) // kein Blocksatz auf der Titelseite
           #v(2cm)
           #align(center)[
             #text(size: 20pt, smallcaps(strong[Universität Hamburg]))
@@ -38,11 +40,11 @@ format:
               im Studiengang ...                                      // ← Ihr Studiengang
             ]
             #v(12mm)
-            #text(size: 11pt)[Hamburg, #datetime.today().display()]
+            #text(size: 11pt)[Hamburg, #datetime.today().display("[day].[month].[year]")] // ← Datumsformat: 15.10.2026
           ]
           #v(1fr)
           #grid(
-            columns: (1fr, 1fr),
+            columns: (auto, 1fr), // auto: linke Spalte passt sich der E-Mail an
             column-gutter: 2em,
             [
               _eingereicht von:_ \
@@ -72,7 +74,6 @@ format:
         #pagebreak()
     include-in-header:
       text: |
-        #set text(lang: "de")
         #set par(leading: 1em, justify: true)
         #set math.equation(numbering: "(1)", number-align: end + horizon)
         #show heading: it => { v(0.5em) + it + v(0.2em) }
@@ -164,6 +165,25 @@ $x_{ij}$ : Binärvariable, 1 falls ein Fahrzeug von $i$ nach $j$ fährt
          #line(length: 100%)              // Horizontale Linie
          #set text(size: 9pt)             // Schriftgröße lokal ändern
          ```
+
+     KOMPLEXE TABELLEN (z.B. verbundene Zellen über mehrere Spalten)
+     Für Tabellen, die Pipe-Syntax übersteigt, den table() direkt als
+     Roh-Typst schreiben und in eine Float-Div mit ID und tbl-cap packen.
+     Wichtig: #table() OHNE eigenes #figure() und OHNE caption verwenden —
+     Beschriftung, Nummerierung ("Tabelle 6") und Eintrag im
+     Tabellenverzeichnis übernimmt Quarto:
+
+         ::: {#tbl-label tbl-cap="Beschriftung der Tabelle"}
+         ```{=typst}
+         #table(
+           columns: 3,
+           table.header(...),
+           ..., 
+         )
+         ```
+         :::
+
+         Im Text referenzieren wie gewohnt mit @tbl-label.
 
      Siehe https://typst.app/docs für die vollständige Typst-Referenz.
 

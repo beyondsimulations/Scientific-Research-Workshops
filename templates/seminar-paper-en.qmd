@@ -9,6 +9,7 @@ format:
     toc: false
     toc-depth: 3
     number-sections: true
+    papersize: a4 # DIN A4
     margin:
       top: 30mm
       bottom: 20mm
@@ -19,6 +20,7 @@ format:
       text: |
         // ==== TITLE PAGE — edit the fields marked with ← ====
         #page(numbering: none)[
+          #set par(justify: false) // no justification on the title page
           #v(2cm)
           #align(center)[
             #text(size: 20pt, smallcaps(strong[University of Hamburg]))
@@ -38,11 +40,11 @@ format:
               in the program ...                               // ← your program
             ]
             #v(12mm)
-            #text(size: 11pt)[Hamburg, #datetime.today().display()]
+            #text(size: 11pt)[Hamburg, #datetime.today().display("[day] [month repr:long] [year]")] // ← date format: 15 October 2026
           ]
           #v(1fr)
           #grid(
-            columns: (1fr, 1fr),
+            columns: (auto, 1fr), // auto: left column adapts to the email line
             column-gutter: 2em,
             [
               _submitted by:_ \
@@ -72,7 +74,6 @@ format:
         #pagebreak()
     include-in-header:
       text: |
-        #set text(lang: "en")
         #set par(leading: 1em, justify: true)
         #set math.equation(numbering: "(1)", number-align: end + horizon)
         #show heading: it => { v(0.5em) + it + v(0.2em) }
@@ -164,6 +165,25 @@ $x_{ij}$ : Binary variable, 1 if a vehicle travels from $i$ to $j$
          #line(length: 100%)              // horizontal line
          #set text(size: 9pt)             // change font size locally
          ```
+
+     COMPLEX TABLES (e.g. cells spanning multiple columns)
+     For tables beyond pipe syntax, write the table() as raw Typst and
+     wrap it in a float div with an ID and tbl-cap. Important: use
+     #table() WITHOUT your own #figure() and WITHOUT a caption — Quarto
+     provides the caption, numbering ("Table 6"), and the List of
+     Tables entry:
+
+         ::: {#tbl-label tbl-cap="Caption of the table"}
+         ```{=typst}
+         #table(
+           columns: 3,
+           table.header(...),
+           ...,
+         )
+         ```
+         :::
+
+         Reference it in the text as usual with @tbl-label.
 
      See https://typst.app/docs for the full Typst reference.
 
