@@ -22,8 +22,6 @@ project:
     - templates/references.bib
     - templates/typst-show.typ
     - templates/images/Image.pdf
-  post-render:
-    - helpers/convert_qmd_to_md.py
 
 website:
   favicon: images/favicon.svg
@@ -68,19 +66,24 @@ website:
     left:
       - icon: github
         href: https://github.com/beyondsimulations/Scientific-Research-Workshops
+        aria-label: GitHub repository
       - icon: linkedin
         href: https://linkedin.com/in/tobiasvlcek
+        aria-label: LinkedIn
       - icon: envelope
         href: mailto:tobias.vlcek@uni-hamburg.de
+        aria-label: Email
       - icon: skip-backward
         href: https://tobiasvlcek.com/lectures/
+        aria-label: All lectures
       - icon: shield-check
         href: general/privacy.qmd
-      - icon: file-text
+        aria-label: Privacy policy
+      - icon: info-circle
         href: general/imprint.qmd
+        aria-label: Imprint
 
 format:
-  hugo-md: default
   html:
     format-links: false
     theme:
@@ -114,3 +117,6 @@ execute:
   freeze: auto
 
 brand: _brand.yml
+
+filters:
+  - helpers/page-pauses.lua

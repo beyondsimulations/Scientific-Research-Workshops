@@ -17,7 +17,7 @@ A Quarto website for university seminar preparation materials (University of Ham
 
 Quarto website project (`project: type: website` in `_quarto.yml`).
 
-- `_quarto.yml` — central config: site metadata, sidebar navigation, format options, freeze settings. Output formats are `html` and `hugo-md`; the post-render script `helpers/convert_qmd_to_md.py` writes markdown copies to `_repo-md/`
+- `_quarto.yml` — central config: site metadata, sidebar navigation, format options, freeze settings. The output format is `html`
 - `_brand.yml` — brand color palette and typography (Gelasio headings, Reddit Sans body, Google Sans Code monospace)
 - `styles.scss` — custom theme built on `_brand.yml` variables; defines CSS utility classes (`.highlight`, `.task`, `.question`, `.flow`, `.errors`, `.light`)
 - `index.qmd` — landing page with an About section and a bulleted Topics list; `404.qmd` — error page
@@ -49,3 +49,13 @@ Quarto website project (`project: type: website` in `_quarto.yml`).
   - Columns: `::::{.columns} :::{.column width="50%"}`
 - Paper templates use `format: typst` for PDF output (no LaTeX distribution needed)
 - `execute: freeze: auto` — computations cached; only re-run when source changes
+
+## Shared foundations
+
+`../lecture-foundations` holds the cross-course standard (branding,
+slide/tooling conventions, quizkit guides) and shared scripts, e.g. the
+revealjs slide overflow gate
+(`uv run ../lecture-foundations/scripts/check_slide_overflow.py`, needs
+`uv add --dev playwright` once). Check it before solving a problem that
+smells course-generic — it may already be solved there, and generic fixes
+belong there, not here.
